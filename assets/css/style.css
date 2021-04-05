@@ -1,0 +1,28 @@
+.blurb-home {
+    border: solid;
+    height: 35rem;
+}
+
+.hero-text {
+padding-top: 5rem;
+}
+
+.circle-home-profiler {
+    height: 15rem;
+    width: 15rem;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3rem;
+    margin: auto;
+}
+
+.circle-home-button {
+    height: 7rem;
+    width: 7rem;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
