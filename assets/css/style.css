@@ -1,28 +1,66 @@
-.blurb-home {
+.home-hero-image-div {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.home-hero-image-circle {
+    height: 10rem;
+    width: 10rem;
+    background: red;
+    border-radius: 50%;
+    margin: auto;
     border: solid;
-    height: 35rem;
 }
 
-.hero-text {
-padding-top: 5rem;
+.home-hero-blurb-text{
+    text-align: center;
 }
 
-.circle-home-profiler {
-    height: 15rem;
-    width: 15rem;
+.home-nav-button-circle {
+    height: 8rem;
+    width: 8rem;
     background: red;
     border-radius: 50%;
     text-align: center;
-    padding: 3rem;
+    border: solid;
     margin: auto;
 }
 
-.circle-home-button {
-    height: 7rem;
-    width: 7rem;
-    background: red;
-    border-radius: 50%;
+.home-nav-button-div {
+    padding: 10rem 0;
+}
+
+#home-nav-contact-special-div{
+    padding-bottom: 1rem ;
+}
+
+.home-nav-contact-special-button{
+    margin: auto;
     text-align: center;
-    margin: auto;
+    padding: 0.5rem 1rem;
+    width: 8rem;
 }
 
+/******************* MEDIA QUERIES *******************/
+
+/* bigger than iphone queries */
+@media screen and (max-width: 576px) {
+
+    /******* HOME PAGE *******/
+    /*full site navigation buttons to be removed*/
+    .home-nav-button-div {
+        display: none;
+    }
+
+}
+
+/* smaller than iphone queries */
+@media screen and (min-width: 576px) {
+
+    /******* HOME PAGE *******/
+    /*navigation to contact page button to be be added */
+    #home-nav-contact-special-div {
+        display: none;
+    }
+
+}
