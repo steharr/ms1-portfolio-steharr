@@ -52,10 +52,22 @@ In order to offer an interview to the developer I want...
 <!-- about me section is to give a history which illustrates how I am a career changer -->
 <!-- will it be hard to rotate a timeline in the about me section-->
 
-* single scroll website
-* eye catching header section
-* combined story about me section - to give background to my decision to switch
+<!-- Website Overall Design Structure -->
+The site is designed to be a one page scrolling site. This is to make the site navigation as smooth as possible for the recruiter. My intention is that the site flows in one direction (ie. from top to bottom) with the final destination being a contact page. This replicates how a recruiter normally reads through a CV (i.e. top to bottom) which will give them a feeling of familarity.  
 
+The viewer should not need to press any button in order to view any data, they should primarily be using their scroll wheel. The only time they should need to click their mouse is either if they want to go back and reevaluate a previously seen page (possible through the nav bar) or for them to skip content to go to a page of particular interest (e.g. on the 'about' page there is an option to jump to projects).
+
+The page structure of the site will contain the key elements of a resume/cv: a personal pitch/summary, education, work history, skills, projects. The page structure of the site is as follows:
+
+1. Landing Page
+2. About
+3. Skills
+4. Project
+5. Contact
+
+The initial landing page is to include a short summary of my profile in order to give the viewer an overview of my personailty and interests. After this, the first 'About' page of the site will focus on the non technical aspects of my profile so that the viewer is not initally overwhelmed by detailed content. As the recruiter moves further through the site, the more technical information will be presented in the form of a skills page and a projects page.
+
+* combined story about me section - to give background to my decision to switch
 
 ### **Wireframes (Skeleton Plane)**
 
