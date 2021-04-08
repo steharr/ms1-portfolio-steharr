@@ -1,3 +1,13 @@
+/******************* Fonts *******************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/******************* Hero Profile *******************/
+
 .home-hero-image-div {
     padding-top: 4rem;
     padding-bottom: 2rem;
@@ -12,9 +22,12 @@
     border: solid;
 }
 
+
 .home-hero-blurb-text{
     text-align: center;
 }
+
+/******************* Home Page Big Navigation Buttons *******************/
 
 .home-nav-button-circle {
     height: 8rem;
@@ -22,8 +35,9 @@
     background: red;
     border-radius: 50%;
     text-align: center;
-    border: solid;
+    border: 6px solid;
     margin: auto;
+    font-size: 5rem;
 }
 
 .home-nav-button-div {
@@ -43,7 +57,7 @@
 
 /******************* MEDIA QUERIES *******************/
 
-/* bigger than iphone queries */
+/* smaller than iphone queries */
 @media screen and (max-width: 576px) {
 
     /******* HOME PAGE *******/
@@ -51,10 +65,9 @@
     .home-nav-button-div {
         display: none;
     }
-
 }
 
-/* smaller than iphone queries */
+/* bigger than iphone queries */
 @media screen and (min-width: 576px) {
 
     /******* HOME PAGE *******/
@@ -63,4 +76,25 @@
         display: none;
     }
 
+    .home {
+        height: 30rem;
+        /* padding-top: 7rem; */
+    }
+
+    .home-hero-image-div {
+        padding: 11rem 0 0 18%;
+    }
+
+    .home-hero-image-circle{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .home-hero-blurb{
+        padding: 15rem 0;
+    }
+
+    .home-hero-blurb-text {
+        text-align: left;
+    }
 }
