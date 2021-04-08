@@ -6,7 +6,7 @@ As part of my Code Institute course studies, I am creating this personal portfol
 
 <!-- # STRATEGY -->
 
-### **Overall Project Goals (Strategy Plane)**
+### **Overall Project Goals**
 Design a personal portfolio site for myself to help convince tech recruiters that I would be a valuable addition to their company
 
 ### **User Stories**
@@ -43,20 +43,19 @@ In order to offer an interview to the developer I want...
 * Have the option to download a traditional CV
 * Always within a click's reach of getting in contact
 
-<!-- potentially add section for collaborator -->
+<!-- # SCOPE -->
 
-# SCOPE
+### **Design Choices**
 
-### **Design Choices (Structure Plane)**
-<!-- IDEA: Research on whats out there -->
-<!-- about me section is to give a history which illustrates how I am a career changer -->
-<!-- will it be hard to rotate a timeline in the about me section-->
+<!-- Smooth scrolling -->
+The site is designed to be a one page scrolling site. This is to make the site navigation as smooth as possible for the recruiter. The objective is that the site flows in one direction (ie. from top to bottom) with the final destination being a contact page. This replicates how a recruiter normally reads through a CV (i.e. top to bottom) which will give them a feeling of familarity. 
 
-<!-- Website Overall Design Structure -->
-The site is designed to be a one page scrolling site. This is to make the site navigation as smooth as possible for the recruiter. My intention is that the site flows in one direction (ie. from top to bottom) with the final destination being a contact page. This replicates how a recruiter normally reads through a CV (i.e. top to bottom) which will give them a feeling of familarity.  
+<!-- Minimal Navigation -->
+In order to minimize the amount of manual navigation the site has been designed with the objective that the viewer should not need to press any button in order to view any data. Navigation is primarily done by scrolling. The only time the user should need to press any element on the website is for either of the following situations:
+* They want to go back and reevaluate a previously seen page (possible through the main overhead nav bar)
+* They want to skip content to go to a page of particular interest (e.g. on the 'about' page there is an option to jump to projects).
 
-The viewer should not need to press any button in order to view any data, they should primarily be using their scroll wheel. The only time they should need to click their mouse is either if they want to go back and reevaluate a previously seen page (possible through the nav bar) or for them to skip content to go to a page of particular interest (e.g. on the 'about' page there is an option to jump to projects).
-
+<!-- Familiar Elements -->
 The page structure of the site will contain the key elements of a resume/cv: a personal pitch/summary, education, work history, skills, projects. The page structure of the site is as follows:
 
 1. Landing Page
@@ -67,21 +66,48 @@ The page structure of the site will contain the key elements of a resume/cv: a p
 
 The initial landing page is to include a short summary of my profile in order to give the viewer an overview of my personailty and interests. After this, the first 'About' page of the site will focus on the non technical aspects of my profile so that the viewer is not initally overwhelmed by detailed content. As the recruiter moves further through the site, the more technical information will be presented in the form of a skills page and a projects page.
 
-* combined story about me section - to give background to my decision to switch
+<!-- # SKELETON -->
 
-### **Wireframes (Skeleton Plane)**
+### **Wireframes**
 
-<!-- Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser. -->
-
-## Features
+### **Features**
 <!-- 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. -->
- 
+* #### Overhead Horizontal Navbar
+
+* #### Navbar Responsiveness
+
+* #### Navbar Transition
+
+* #### Smooth Scrolling
+   The site is contained in one single long html file that is split up into 5 sections. The user scrolls progressively downwards through the site.
+
+* #### Landing Page Blurb with Profile Image
+   The landing page has an opening summary blurb of the site owner with circular profile image in order to get the viewer quickly familarised with the site owner
+
+* #### Landing Page Site Large Navigation Section
+   The landing page has a set of large circular site navigation buttons in order to allow the viewer the option to jump to a particular section of interest once they have read the summary blurb. These buttons link to the "About" section, "Skills" section, "Projects" section and the "Contact" section. 
+
+* #### Landing Page Site Large Navigation Buttons Responsiveness
+   The buttons also respond to mobile screens. All buttons disapear except for the "Contact" section button. This design decision was made due to the size of the mobile screen being too small for these buttons. As well as this the nav bar which contains the same options is more present on a mobile device. The only button left on mobile (i.e. the "Contact" button) is prioritised on mobile devices as it is arguably the most important button for advanicing the site owners goals   
+
+* #### Landing Page Site Large Navigation Buttons Responsiveness (not finished)
+
+* #### About Me Section Timeline
+
+* #### About Me Section Latest Project Bubble
+
+* #### Skills Section Coding Languages Progress Bars
+
+* #### Skills Section Technologies/ Misc 
+
+* #### Skills Section Responsiveness
+
+* #### Projects Card View
+
+* #### Contact Me Section form
+
+
 ### Existing Features
 <!-- - Feature 1 - allows users X to achieve Y, by having them fill out Z
 - ...
