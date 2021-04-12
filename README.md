@@ -1,13 +1,14 @@
 # **Stephen Harrold Personal Portfolio / CV Website**
 
-As part of my Code Institute course studies, I am creating this personal portfolio / CV website for my first milestone project. The website showcases my skills and experience to a potential recruiter with the aim of convincing them that I would be a valuable addition to their company. The website is built using HTML, CSS and Bootstrap
+As part of my Code Institute course studies, I have created this personal portfolio / CV website for my first milestone project. The website showcases my skills and experience to a potential recruiter with the aim of convincing them that I would be a valuable addition to their company. The website is built using HTML, CSS and Bootstrap. 
+The primary goal of the site is to set me apart from other candidates applying for similar jobs. Presenting my skills, experience and projects in a website distinguishes me from other applicants and helps to relieve the repetition of the hiring process for a recruiter.  
  
 ## **UX**
 
 <!-- # STRATEGY -->
 
-### **Overall Project Goals**
-Design a personal portfolio site for myself to help convince tech recruiters that I would be a valuable addition to their company
+<!-- ### **Overall Project Goals**
+Design a personal portfolio site for myself to help convince tech recruiters that I would be a suitable for the job that I am applying for. The recruitment process  -->
 
 ### **User Stories**
 
@@ -71,41 +72,63 @@ The initial landing page is to include a short summary of my profile in order to
 ### **Wireframes**
 
 ### **Features**
+
 <!-- 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. -->
-* #### Overhead Horizontal Navbar
 
-* #### Navbar Responsiveness
+#### Base Site
 
-* #### Navbar Transition
+There are * key features present throughout the site:
 
-* #### Smooth Scrolling
-   The site is contained in one single long html file that is split up into 5 sections. The user scrolls progressively downwards through the site.
+* ##### Overhead Horizontal Navbar
 
-* #### Landing Page Blurb with Profile Image
-   The landing page has an opening summary blurb of the site owner with circular profile image in order to get the viewer quickly familarised with the site owner
+* ##### Navbar Responsiveness
 
-* #### Landing Page Site Large Navigation Section
+* ##### Navbar Transition
+
+* ##### Smooth Scrolling
+   The site is contained in one single long html file that is split up into 5 sections. The viewer scrolls progressively downwards through the site.
+
+#### Landing Page
+
+I designed the landing page to quickly summarise the my profile and entice the viewer to move deeper into the site. Key features of this section include:
+
+* ##### Blurb with Profile Image
+   The landing page has an opening summary blurb of the site owner with circular profile image in order to get the viewer quickly familarised with the site owner appearance. This creates an image in the recruiters mind of the applicant.
+
+* ##### Site Large Navigation Section
    The landing page has a set of large circular site navigation buttons in order to allow the viewer the option to jump to a particular section of interest once they have read the summary blurb. These buttons link to the "About" section, "Skills" section, "Projects" section and the "Contact" section. 
 
-* #### Landing Page Site Large Navigation Buttons Responsiveness
+* ##### Site Large Navigation Buttons Responsiveness
    The buttons also respond to mobile screens. All buttons disapear except for the "Contact" section button. This design decision was made due to the size of the mobile screen being too small for these buttons. As well as this the nav bar which contains the same options is more present on a mobile device. The only button left on mobile (i.e. the "Contact" button) is prioritised on mobile devices as it is arguably the most important button for advanicing the site owners goals   
 
-* #### Landing Page Site Large Navigation Buttons Responsiveness (not finished)
+* ##### Site Large Navigation Buttons Transitons (not finished)
 
-* #### About Me Section Timeline
+#### About Me Section
 
-* #### About Me Section Latest Project Bubble
+Since I am undergoing a change in career, I decided to design the "About" section in a timeline format in order to give historical context to a recuriter about how I have come to the decision to pursue a coding career. In doing this I am also highlighting all of the elements of my profile which will be transferrable to a coding career. The section condenses three traditional parts of a regular CV (education, work history & key projects) into one compact page.
 
-* #### Skills Section Coding Languages Progress Bars
+* ##### About Me Section Timeline
+   The timeline of the section starts with my college education, then moves to my work experience and finally to a description of the studies I am doing now with Code Institute
 
-* #### Skills Section Technologies/ Misc 
+* ##### About Me Section Latest Project Bubble
+   Next to the timeline is a "Latest Project" bubble which will give a brief overview of what I am currently working on. It also gives an option to allow the user to skip to the projects section of the site
 
-* #### Skills Section Responsiveness
+#### Skills Section
 
-* #### Projects Card View
+* ##### Coding Languages Progress Bars
 
-* #### Contact Me Section form
+* ##### Technologies/ Misc 
+
+* ##### Skills Section Responsiveness
+
+#### Projects Section
+
+* ##### Cards View
+
+#### Contact Section
+
+* ##### Contact Me Section form
 
 
 ### Existing Features
@@ -118,6 +141,7 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 <!-- - Another feature idea -->
+<!-- blog, excel vba courses -->
 
 ## Technologies Used
 
