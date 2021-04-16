@@ -8,6 +8,12 @@ body {
     background-color:#264653;
     color:#ffff;
 }
+.page-header {
+    font-family: 'Roboto Slab', monospace;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
 /******************* Overhead Site NavBar *******************/
 .navbar-bottom-border {
     border-bottom: 1px solid #96ACB7;
@@ -105,9 +111,6 @@ body {
     padding: 0;
 }
 /******************* About Me Page Timeline *******************/
-.about-header {
-    text-align: center;
-}
 .about-timeline {
     padding: 0;
     width: 80%;
@@ -133,6 +136,57 @@ body {
     content: '';
     background: #E9C46A;
 }
+/******************* About Me Page Timeline *******************/
+.skills-box {
+    color: #fff;
+    margin: 1rem auto;
+    border-radius: 5%;
+    padding: 1rem;
+    border: .05rem solid #96ACB7;
+}
+.skills-box-header {
+    text-align: center;
+    font-size: 2rem;
+}
+.coding-languages-item{
+    justify-content: left;
+    margin: auto;
+    padding: .5rem 0;
+}
+.language-type {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0;
+    justify-content: left;
+}
+.coding-languages-progress-bar{
+    margin-top: .25rem;
+    padding: 0;
+    background-color:#2B343B; 
+}
+.percentage{
+    /* Made using coolors gradient maker at: https://coolors.co/gradient-maker/e76f51-e9c46a?position=0,100&opacity=100,100&type=linear&rotation=0 */
+    background: hsla(12, 76%, 61%, 1);
+    background: linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E76F51", endColorstr="#E9C46A", GradientType=1 );
+}
+ul {
+    padding:0;
+}
+/* .expertise-item::before {
+    display: inline-block;
+    position: relative;
+    left: -.5rem;
+    top: .1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    border: .2rem solid #F4A261;
+    content: '';
+    background: #E9C46A;
+} */
 /******************* MEDIA QUERIES *******************/
 /* bigger than iphone queries */
 @media screen and (min-width: 576px) {
