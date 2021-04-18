@@ -201,6 +201,25 @@ ul {
 .project-card-image{
     height: 50%;
 }
+/******************* Contact Page *******************/
+
+.contact-form {
+    width: 60%;
+    margin: auto;
+}
+
+.contact-form-item {
+    display:flex;
+    margin-bottom: .5rem;
+    flex-direction: column;
+    text-align:center;
+}
+
+.form-input {
+    background-color: #2B343B;
+    color: #fff;
+}
+
 /******************* MEDIA QUERIES *******************/
 /* bigger than iphone queries */
 @media screen and (min-width: 576px) {
