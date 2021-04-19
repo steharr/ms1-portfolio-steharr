@@ -45,10 +45,13 @@ body {
     width: 10rem;
     /* insert color palette here */
     background-color: #E76F51;
+    background-image: url('../images/hero-image.png');
+    background-size: cover;
     /* insert color palette here */
     border: 1rem solid #F4A261;
     border-radius: 50%;
     margin: auto;
+    
 }
 .home-hero-blurb-text{
     text-align: center;
@@ -256,5 +259,33 @@ ul {
     }
     .home-hero-blurb-text > p {
         padding-right: 30%;
+    }
+    /******* ABOUT ME PAGE *******/
+    .about-timeline-item {
+        border-left: none;
+        border-top: .2rem dashed #F4A261;
+        padding-top: 1rem;
+        margin: 3rem 0;
+    }
+    .timeline-item-title::before {
+        left: 6.5rem;
+        top:-.5rem;
+    }
+}
+
+/* ipad pro queries */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /******* ABOUT ME PAGE *******/
+    .timeline-item-title::before {
+        left: 3.75rem;
+        top:-.5rem;
+    }
+}
+/* ipad pro queries */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /******* ABOUT ME PAGE *******/
+    .timeline-item-title::before {
+        left: 5.25rem;
+        top:-.5rem;
     }
 }
