@@ -13,11 +13,20 @@ body {
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
+    margin: 2rem 0;
 }
 .btn-sienna {
     border: 1px solid #2b343b;
     color: #2b343b;
     background-color: #E9C46A;
+}
+a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
 }
 /******************* Overhead Site NavBar *******************/
 .navbar-bottom-border {
@@ -51,7 +60,6 @@ body {
     border: 1rem solid #F4A261;
     border-radius: 50%;
     margin: auto;
-    
 }
 .home-hero-blurb-text{
     text-align: center;
@@ -122,15 +130,17 @@ body {
 /******************* About Me Page Timeline *******************/
 .about-timeline {
     padding: 0;
-    width: 80%;
-    margin-left: 10%;
+    margin: 0;
     text-align: center;
 }
+.about-timeline-visual {
+    display: none;   
+}
 .about-timeline-item {
-    text-align: center;
-    width: 30%;
-    padding: 0;
-    border-left: .2rem solid #F4A261;
+    text-align: left;
+    padding-left: 1rem;
+    border-left: .2rem dashed #F4A261;
+    font-size: 80%;
 }
 /* timeline disc (adapted from rosie odenkirk practice bootstrap project) */
 .timeline-item-title::before {
@@ -268,24 +278,29 @@ ul {
         margin: 3rem 0;
     }
     .timeline-item-title::before {
-        left: 6.5rem;
+        left: 1rem;
         top:-.5rem;
     }
-}
-
-/* ipad pro queries */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-    /******* ABOUT ME PAGE *******/
-    .timeline-item-title::before {
-        left: 3.75rem;
-        top:-.5rem;
+    .about-timeline-visual {
+        display: flex;
+        justify-content: space-around;
     }
-}
-/* ipad pro queries */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    /******* ABOUT ME PAGE *******/
-    .timeline-item-title::before {
-        left: 5.25rem;
-        top:-.5rem;
+    .about-timeline-image {
+        border: solid;
+        background-color: #E76F51;
+        border: 6px solid #F4A261;
+        background-size: cover;
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+    }
+    .about-timeline-image.study {
+        background-image: url('../images/about-study.jpg');
+    }
+    .about-timeline-image.work {
+        background-image: url('../images/about-work.jpg');
+    }
+    .about-timeline-image.now {
+        background-image: url('../images/about-now.jpg');
     }
 }
