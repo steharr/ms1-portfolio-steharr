@@ -215,7 +215,6 @@ ul {
     height: 50%;
 }
 /******************* Contact Page *******************/
-
 .contact-form {
     width: 60%;
     margin: auto;
@@ -227,12 +226,41 @@ ul {
     flex-direction: column;
     text-align:center;
 }
-
 .form-input {
     background-color: #2B343B;
     color: #fff;
 }
-
+/******************* Footer *******************/
+footer {
+    background-color: #2A3941;
+    color: #fff;
+    padding-top: 1rem;
+    border-top: .25rem solid #2B343B;
+    margin-top: 2rem;
+}
+.footer-item {
+    text-align: center;
+    font-size: 70%;
+}
+.footer-item a {
+    font-size: 1.75rem;
+    color: #fff;
+    -webkit-transition: all 0.35s ease-in-out; 
+    -moz-transition: all 0.35s ease-in-out; 
+    -o-transition: all 0.35s ease-in-out; 
+    transition: all 0.35s ease-in-out; 
+}
+.footer-item a:hover {
+    font-size: 2rem;
+    color: #E9C46A;
+}
+.footer-item a:visited {
+    color: #E9C46A;
+}
+#copyright {
+    text-align: center;
+    font-size: .75rem;
+}
 /******************* MEDIA QUERIES *******************/
 /* bigger than iphone queries */
 @media screen and (min-width: 576px) {
