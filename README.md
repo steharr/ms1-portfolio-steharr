@@ -1,62 +1,63 @@
 # **Stephen Harrold Personal Portfolio / CV Website**
 
-As part of my Code Institute course studies, I have created this personal portfolio / CV website for my first milestone project. The website showcases my skills and experience to a potential recruiter with the aim of convincing them that I would be a valuable addition to their company. The website is built using HTML, CSS and Bootstrap. 
-The primary goal of the site is to set me apart from other candidates applying for similar jobs. Presenting my skills, experience and projects in a website distinguishes me from other applicants and helps to relieve the repetition of the hiring process for a recruiter.  
- 
+As part of my Code Institute course studies, I have created this personal portfolio / CV website for my first milestone project. The site owner is myself and the primary goal for creating the site is to get a job in software development. The target site viewers are recruiters; they will be visting this site when they are looking at my job application. Presenting my skills, experience and projects in the form of a website distinguishes me from others in the mind of the recruiter and hopefully helps to relieve the repetition of the hiring process for them.  
+
+The website is mobile first and built using HTML, CSS and Bootstrap. 
+
 ## **UX**
+The **five planes of user experience design** developed by Jesse Jame Garrett was used as the conceptual framework for the development process of this site
 
-<!-- # STRATEGY -->
+### **Strategy Plane**
+For the strategy plane, I researched various existing developer personal websites in order to give me an overview of what is typically put on a website like this. In particular [this article](https://www.freecodecamp.org/news/15-web-developer-portfolios-to-inspire-you-137fb1743cae/) on www.freecodecamp.org gave me a wide variety of examples to draw inspiration from. There was also [this site](https://brittanychiang.com/#about) from boston based software engineer Brittany Chiang which I stumbled upon and was particularly inspiring for me.
+This research helped me to develop a write a list of User Stories from the perspective of the site owner, myself.
 
-<!-- ### **Overall Project Goals**
-Design a personal portfolio site for myself to help convince tech recruiters that I would be a suitable for the job that I am applying for. The recruitment process  -->
+For the perspective of a recruiter I researched online articles on what a tech recruiter is typically looking for from someone who is applying for a developer role and what challenges they face. A notable mention was [this article](https://geshan.com.np/blog/2019/01/things-tech-recruiters-look-for/) from a software engineers blog website. It gave an in depth insight into the mind of a tech recruiter and helped me finalize a list of User Stories from the perspective of a tech recruiter.
 
 ### **User Stories**
 
-**Site Owner**
+Site Owner:
 
 As someone who is undergoing a career change, with this site I want...
-* To get offers for jobs in software development
-* Display my strongest traits to the site visitor: Creativity, Problem Solver, Enthusiastic Learner
-* Demonstrate my technical skills through the design of the site
-* Have a location to store & demonstrate all of my completed and ongoing projects
-* Convey my passion for programming
 
-**Site Viewer Goals**
-<!-- personality -->
+1. To get offers for jobs in software development
+2. Display my strongest traits to the site visitor: Creativity, Problem Solver, Enthusiastic Learner
+3. Demonstrate my technical skills through the design of the site
+4. Have a location to store & demonstrate all of my completed and ongoing projects
+5. Convey my passion for programming
+
+Site Viewer:
+
 As a recruiter,
-
 In order to asses the profile/personality/character of the developer I want to...
-* Get a comprehensive overview of the experience and skillset of this developer
-* Read a good 'about me' blurb in the site
-* Determine that this developer is a good fit for the job I am recruiting for
 
-<!-- technical -->
+1. Get a comprehensive overview of the experience and skillset of this developer
+2. Read a good 'about me' blurb in the site that is eye catching.
+
 In order to assess the technical skills of the developer I want...
-* The project porfolio is to be easily accessible
-* The project porfolio is to be easily understandable
-* The experience of navigating through the site is to be enjoyable and smooth
-* The layout of the site to be intuitive
-* The site to perform well on any device
 
-<!-- action -->
+3. The project porfolio is to be easily accessible
+4. The project porfolio is to be easily understandable
+5. The experience of navigating through the site is to be enjoyable and smooth
+6. The layout of the site to be intuitive
+7. The site to perform well on any device
+
 In order to offer an interview to the developer I want...
-* Easy access to contact details of this person 
-* Have the option to download a traditional CV
-* Always within a click's reach of getting in contact
 
-<!-- # SCOPE -->
+8. Easy access to contact details of this person 
+9. Have the option to download a traditional CV
+10. Always within a click's reach of getting in contact
 
-### **Design Choices**
+### **Scope Plane**
+For the Scope plane, I made some key design choices based on my research 
 
-<!-- Smooth scrolling -->
+### **Key Design Choices**
+
 The site is designed to be a one page scrolling site. This is to make the site navigation as smooth as possible for the recruiter. The objective is that the site flows in one direction (ie. from top to bottom) with the final destination being a contact page. This replicates how a recruiter normally reads through a CV (i.e. top to bottom) which will give them a feeling of familarity. 
 
-<!-- Minimal Navigation -->
 In order to minimize the amount of manual navigation the site has been designed with the objective that the viewer should not need to press any button in order to view any data. Navigation is primarily done by scrolling. The only time the user should need to press any element on the website is for either of the following situations:
 * They want to go back and reevaluate a previously seen page (possible through the main overhead nav bar)
 * They want to skip content to go to a page of particular interest (e.g. on the 'about' page there is an option to jump to projects).
 
-<!-- Familiar Elements -->
 The page structure of the site will contain the key elements of a resume/cv: a personal pitch/summary, education, work history, skills, projects. The page structure of the site is as follows:
 
 1. Landing Page
@@ -67,14 +68,7 @@ The page structure of the site will contain the key elements of a resume/cv: a p
 
 The initial landing page is to include a short summary of my profile in order to give the viewer an overview of my personailty and interests. After this, the first 'About' page of the site will focus on the non technical aspects of my profile so that the viewer is not initally overwhelmed by detailed content. As the recruiter moves further through the site, the more technical information will be presented in the form of a skills page and a projects page.
 
-<!-- # SKELETON -->
-
-### **Wireframes**
-
 ### **Features**
-
-<!-- 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. -->
 
 #### Base Site
 
@@ -129,6 +123,9 @@ Since I am undergoing a change in career, I decided to design the "About" sectio
 #### Contact Section
 
 * ##### Contact Me Section form
+
+### **Structure Plane**
+### **Wireframes**
 
 
 ### Existing Features
