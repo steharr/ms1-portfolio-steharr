@@ -219,7 +219,6 @@ ul {
     width: 60%;
     margin: auto;
 }
-
 .contact-form-item {
     display:flex;
     margin-bottom: .5rem;
@@ -239,23 +238,17 @@ footer {
     margin-top: 2rem;
 }
 .footer-item {
-    text-align: center;
+    text-align: left;
     font-size: 70%;
+    padding: .5rem 3rem;
 }
 .footer-item a {
     font-size: 1.75rem;
-    color: #fff;
+    color: #E9C46A;
     -webkit-transition: all 0.35s ease-in-out; 
     -moz-transition: all 0.35s ease-in-out; 
     -o-transition: all 0.35s ease-in-out; 
     transition: all 0.35s ease-in-out; 
-}
-.footer-item a:hover {
-    font-size: 2rem;
-    color: #E9C46A;
-}
-.footer-item a:visited {
-    color: #E9C46A;
 }
 #copyright {
     text-align: center;
@@ -330,5 +323,13 @@ footer {
     }
     .about-timeline-image.now {
         background-image: url('../images/about-now.jpg');
+    }
+    /******* FOOTER *******/
+    .footer-item {
+        padding-left: 20%;
+        padding-right: 10%;
+    }
+    .footer-item a:hover {
+        color: #fff;
     }
 }
