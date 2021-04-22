@@ -15,11 +15,6 @@ body {
     text-align: center;
     margin: 2rem 0;
 }
-.btn-sienna {
-    border: 1px solid #2b343b;
-    color: #2b343b;
-    background-color: #E9C46A;
-}
 a {
     color: #fff;
     font-weight: 600;
@@ -27,6 +22,31 @@ a {
 }
 a:hover {
     color: #fff;
+}
+.bold-font {
+    font-weight: 600;
+}
+/* Default button styling throughout site */
+.btn-steharr-standard {
+    border: 1px solid #2b343b;
+    color: #2b343b;
+    background-color: #E9C46A;
+    -webkit-transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out; 
+    -moz-transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out;  
+    -o-transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out; 
+    transition: 
+    background-color 0.35s ease-in-out,
+    font-weight 0.35s ease-in-out; 
+}
+.btn-steharr-standard:hover {
+    background-color: #fff;
+    font-weight: 600;
 }
 /******************* Overhead Site NavBar *******************/
 .navbar-bottom-border {
@@ -215,19 +235,67 @@ ul {
     height: 50%;
 }
 /******************* Contact Page *******************/
-.contact-form {
-    width: 60%;
+#contact {
+    margin-bottom: 5rem;
+}
+.contact-info-box {
+    text-align: center;
+    display:flex;
+    flex-flow: column;
+    margin-bottom: 1rem;
+}
+.contact-info-box a,
+.contact-info-box p
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#text-large-screen {
+    display: none;
+}
+ .contact-form {
+    background-color: #2A3941;
+    /* border: .1rem solid #272F36; */
+    color: #fff;
+    font-weight:600;
+    border-radius: 3%;
+    width: 100%;
     margin: auto;
+    padding: 1rem;
 }
 .contact-form-item {
     display:flex;
-    margin-bottom: .5rem;
     flex-direction: column;
     text-align:center;
+    width: 90%;
+    margin: 1rem auto;
 }
 .form-input {
-    background-color: #2B343B;
+    background-color: #272F36;
     color: #fff;
+}
+input[type=text],
+input[type=email],
+textarea {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-style:none;
+    border-bottom: .1rem solid #96ACB7;
+}
+/* Change Autocomplete styling in Chrome*/
+/* adapted from CSS tricks: https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px #4D5D6A inset;
 }
 /******************* Footer *******************/
 footer {
@@ -257,6 +325,11 @@ footer {
 /******************* MEDIA QUERIES *******************/
 /* bigger than iphone queries */
 @media screen and (min-width: 576px) {
+    /******* GENERAL *******/
+    .page-header {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
     /******* HOME PAGE *******/
     /*navigation to contact page button to be be added (replaces big site navigation buttons)*/
     #home-nav-contact-special-div {
@@ -323,6 +396,25 @@ footer {
     }
     .about-timeline-image.now {
         background-image: url('../images/about-now.jpg');
+    }
+    /******* CONTACT PAGE *******/
+    .contact-info-box {
+        flex-flow: column-reverse;
+        text-align: left;
+        /* padding-top: 5%; */
+        padding-bottom: 25%;
+        padding-right: 5%;
+        margin-bottom: 0;
+    }
+    .contact-form {
+        margin:0 auto;
+        width:85%;
+    }
+    #text-small-screen {
+        display: none;
+    }
+    #text-large-screen {
+        display: inline;
     }
     /******* FOOTER *******/
     .footer-item {
