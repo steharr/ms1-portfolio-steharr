@@ -73,7 +73,7 @@ a:hover {
     height: 10rem;
     width: 10rem;
     /* insert color palette here */
-    background-color: #E76F51;
+    background-color: #E76F51;    
     background-image: url('../images/hero-image.png');
     background-size: cover;
     /* insert color palette here */
@@ -179,7 +179,7 @@ a:hover {
 .skills-box {
     color: #fff;
     margin: 1rem .5rem 1rem 0;
-    border-radius: 5%;
+    border-radius: 1rem;
     padding: 1rem;
     border: .05rem solid #2B343B;
     background-color: #293D47;
@@ -216,23 +216,61 @@ ul {
     padding:0;
 }
 /******************* Projects Page *******************/
-.projects-box {
-    text-align: center;
-    border: .05rem solid #2B343B;
-    margin: 1rem .5rem 1rem 0;
-    padding: 1rem 0;
-    border-radius: 5%;
+.projects-container {
+    padding: 0 2rem;
+}
+.projects-category {
+    text-align:left;
+    display:inline-block;
+    padding: 0 1rem;
+    background-color: #272F36;
+    font-weight: 600;
+    font-family: 'Roboto Slab', monospace;
 }
 .project-card {
-    height: 25rem; 
-    width: 20rem;
-    font-size: 70%;
-    background-color: #293D47;
+    position:relative;
+    text-align: left;
+    height: 28rem;
     margin-top: 1rem;
+    font-size: 75%;
+    background-color: #2A3941;
+    border-radius: 0;
+    padding: 1rem;
+}
+.card-body {
+    padding: 0;
+}
+.card-body p{
+    padding: .5rem;
+    background-color: #31515E;
+}
+.tags-container {
+    position: absolute;
+    bottom: 4rem;
+}
+.language-content {
+    font-weight: 600;
+    padding: .5rem;
+}
+.programming-lang-tag {
+    background-color: #E76F51;
+    font-weight: 600;
+    border-radius:.25rem;
+    padding: .25rem;
+}
+.card-title {
     display: inline-block;
+    border-bottom: .1rem solid #fff;
+    padding-bottom: .25rem;
 }
 .project-card-image{
     height: 50%;
+    margin-bottom: 1rem;
+}
+.project-card .btn-steharr-standard {
+    position: absolute;
+    right:1rem;
+    bottom: 1rem;
 }
 /******************* Contact Page *******************/
 #contact {
@@ -259,7 +297,7 @@ ul {
     /* border: .1rem solid #272F36; */
     color: #fff;
     font-weight:600;
-    border-radius: 3%;
+    border-radius: 0;
     width: 100%;
     margin: auto;
     padding: 1rem;
@@ -322,8 +360,8 @@ footer {
     text-align: center;
     font-size: .75rem;
 }
-/******************* MEDIA QUERIES *******************/
-/* bigger than iphone queries */
+/************************************** MEDIA QUERIES **************************************/
+/* bigger than mobile queries */
 @media screen and (min-width: 576px) {
     /******* GENERAL *******/
     .page-header {
@@ -344,6 +382,7 @@ footer {
     .home-nav-button-div {
         display: inline-block;
         padding: 9rem 0 10rem 0;
+
     }
     .home {
         height: 30rem;
@@ -396,6 +435,21 @@ footer {
     }
     .about-timeline-image.now {
         background-image: url('../images/about-now.jpg');
+    }
+    /******* PROJECTS PAGE *******/
+    .projects-category{
+        display: block;
+        width: 15rem;
+        margin:auto;
+        text-align: center
+    }
+    .project-card {
+        width: 20rem;
+    }
+    .projects-container{
+        display:flex;
+        justify-content: space-evenly;
+        padding: 0;
     }
     /******* CONTACT PAGE *******/
     .contact-info-box {
