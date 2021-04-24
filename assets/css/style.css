@@ -45,8 +45,14 @@ a:hover {
     font-weight 0.35s ease-in-out; 
 }
 .btn-steharr-standard:hover {
-    background-color: #fff;
+    background-color: #F2DCA6;
     font-weight: 600;
+}
+#about,
+#skills,
+#projects,
+#contact {
+    padding-top: 2rem;
 }
 /******************* Overhead Site NavBar *******************/
 .navbar-bottom-border {
@@ -176,33 +182,31 @@ a:hover {
     background: #E9C46A;
 }
 /******************* Skills Page*******************/
-.skills-box {
+.skills-box-container {
     color: #fff;
-    margin: 1rem .5rem 1rem 0;
-    border-radius: 1rem;
+    border-radius: 0;
     padding: 1rem;
-    border: .05rem solid #2B343B;
-    background-color: #293D47;
+    background-color: #2A3941;
+    width: 95%;
+    margin: 0 auto 1rem auto;
 }
 .skills-box-header {
-    text-align: center;
-    font-size: 2rem;
+    display:inline-block;
+    border-bottom: .1rem solid #fff;
+    padding-bottom: .25rem;
 }
 .coding-languages-item{
-    justify-content: left;
-    margin: auto;
-    padding: .5rem 0;
+    margin: .5rem .1rem;
+    padding:.1rem .1rem;
 }
 .language-type {
-    font-size: 1rem;
-    text-align: left;
     padding: 0;
-    justify-content: left;
 }
 .coding-languages-progress-bar{
-    margin-top: .25rem;
     padding: 0;
-    background-color:#2B343B; 
+    border-radius: 0;
+    margin-top:.25rem;
+    background-color:#272F36; 
 }
 .percentage{
     /* Made using coolors gradient maker at: https://coolors.co/gradient-maker/e76f51-e9c46a?position=0,100&opacity=100,100&type=linear&rotation=0 */
@@ -213,7 +217,50 @@ a:hover {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E76F51", endColorstr="#E9C46A", GradientType=1 );
 }
 ul {
-    padding:0;
+    padding:0 0 0 1rem;
+    list-style-type: none;
+}
+.skills-item-tag {
+    display: inline-block;
+    background-color: #E76F51;
+    font-weight: 600;
+    font-size: 90%;
+    border-radius:.25rem;
+    padding: .125rem;
+    margin: .5rem 0;
+}
+.expertise-description{
+    margin-bottom: 0;
+}
+.soft-skills-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:1rem 0;
+}
+.soft-skill-item-big {
+    height:7rem;
+    width: 7rem;
+    border-radius: 50%;
+    background-color: #E76F51;
+}
+.soft-skill-item-small {
+    height:80%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: #272F36;
+    top:10%;
+    left:10%;
+    position: relative;
+    padding-top:1.5rem;
+}
+.soft-skill-item-small h6 {
+    text-align: center;
+    font-size: 80%;
+    font-weight: 600;
+    width: 80%;
+    margin: auto;
 }
 /******************* Projects Page *******************/
 .projects-container {
@@ -273,9 +320,9 @@ ul {
     bottom: 1rem;
 }
 /******************* Contact Page *******************/
-#contact {
+/* #contact {
     margin-bottom: 5rem;
-}
+} */
 .contact-info-box {
     text-align: center;
     display:flex;
