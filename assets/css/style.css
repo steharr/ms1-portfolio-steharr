@@ -54,7 +54,7 @@ a:hover {
 #contact {
     padding-top: 2rem;
 }
-/******************* Overhead Site NavBar *******************/
+/********************************************************* SITE NAVBAR *********************************************************/
 .navbar-bottom-border {
     border-bottom: 1px solid #96ACB7;
 }
@@ -68,59 +68,57 @@ a:hover {
 .bg-gunmetal {
     background-color: #2B343B;
 }
-/******************* Home Page Hero Profile Icon *******************/
+
+/********************************************************* LANDING PAGE *********************************************************/
+/******************* landing Page Hero Profile Icon *******************/
  /* div containing the hero image */
-.home-hero-image-div {
+.landing-hero-image-div {
     padding-top: 4rem;
     padding-bottom: 2rem;
 }
 /* styled circular div which houses profile image  */
-.home-hero-image-circle {
+.landing-hero-image-circle {
     height: 10rem;
     width: 10rem;
-    /* insert color palette here */
     background-color: #E76F51;    
     background-image: url('../images/hero-image.png');
     background-size: cover;
-    /* insert color palette here */
     border: 1rem solid #F4A261;
     border-radius: 50%;
     margin: auto;
 }
-.home-hero-blurb-text{
+.landing-hero-blurb-text{
     text-align: center;
 }
-.home-hero-blurb-text > h2{
+.landing-hero-blurb-text > h2{
     font-size: 1.25rem;
     padding: 0;
 }
-.home-hero-blurb-text > h1{
+.landing-hero-blurb-text > h1{
     font-family: 'Roboto Slab', monospace;
     font-weight: 600;
     font-size: 2.7rem;
     padding: 0;
 }
-/******************* Home Page Big Navigation Buttons *******************/
-.home-nav-button-circle {
+/******************* landing Page Big Navigation Buttons *******************/
+.landing-nav-button-circle {
     height: 8rem;
     width: 8rem;
     border-radius: 50%;
     text-align: center;
-    /* insert color palette here */
     background:#E76F51;
-    /* insert color palette here */
     border: 6px solid #F4A261;
     margin: auto;
     font-size: 5rem;
 }
-.home-nav-button-div {
+.landing-nav-button-div {
     display: none;
 }
-#home-nav-contact-special-div{
+#landing-nav-contact-special-div{
     padding: .5rem;
     margin: 0 30%;
 }
-.home-nav-contact-special-button{
+.landing-nav-contact-special-button{
     margin: auto;
     text-align: center;
     padding: 0.5rem 0;
@@ -130,58 +128,89 @@ a:hover {
     font-weight: 600;
     border-width: 0;
 }
-.home-nav-button-object {
+.landing-nav-button-object {
     /* insert color palette here */
     color: #ffff;
     text-align: center;
 }
-.home-nav-button-icon {
+.landing-nav-button-icon {
     position: relative;
     bottom: .25rem;
 }
-.home-nav-button-text {
+.landing-nav-button-text {
     position: relative;
     color: #ffff;
     top: 1rem;
 }
-.home-nav-button-object:hover {
+.landing-nav-button-object:hover {
     /* insert color palette here */
     color: #E9C46A;
     text-decoration: none;
 }
-.home-hero-blurb-text > p {
+.landing-hero-blurb-text > p {
     font-size: 1rem;
     padding: 0;
 }
-/******************* About Me Page Timeline *******************/
-.about-timeline {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
+/********************************************************* ABOUT PAGE *********************************************************/
 .about-timeline-visual {
-    display: none;   
+    margin: 0 1rem;
+    padding: 2rem 22%;
 }
-.about-timeline-item {
-    text-align: left;
-    padding-left: 1rem;
+.about-timeline-image {
+    border: solid;
+    background-color: #F4A261;
+    border: .5rem solid #F4A261;
+    background-size: cover;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+}
+.about-timeline-image.study {
+    background-image: url('../images/about-study.jpg');
+}
+.about-timeline-image.work {
+    background-image: url('../images/about-work.jpg');
+}
+.about-timeline-image.now {
+    background-image: url('../images/about-now.jpg');
+}
+.timeline-dashed-line {
     border-left: .2rem dashed #F4A261;
-    font-size: 80%;
+}
+.container-timeline-item {
+    margin: 0 1rem;
+}
+.timeline-item-description {
+    position: relative;
+    padding-left: 1rem;
+}
+.timeline-item-heading {
+    display:inline-block;
+    border-bottom: .1rem solid #fff;
+    padding: .25rem .25rem;
+}
+/* removed bottom margin from p elements to allow timeline to connect */
+.timeline-item-description p {
+    margin-bottom: 0;
+}
+.timeline-item-description-text {
+    background-color: #28424D;
+    padding: 1rem;
 }
 /* timeline disc (adapted from rosie odenkirk practice bootstrap project) */
-.timeline-item-title::before {
+.timeline-item-heading::before {
     display: block;
     position: absolute;
     left: -.6rem;
     top: .7rem;
     width: 1rem;
     height: 1rem;
-    border-radius: 1rem;
+    border-radius: 50%;
     border: .2rem solid #F4A261;
     content: '';
     background: #E9C46A;
 }
-/******************* Skills Page*******************/
+/********************************************************* SKILLS PAGE *********************************************************/
 .skills-box-container {
     color: #fff;
     border-radius: 0;
@@ -201,6 +230,7 @@ a:hover {
 }
 .language-type {
     padding: 0;
+    font-size:85%;
 }
 .coding-languages-progress-bar{
     padding: 0;
@@ -262,7 +292,7 @@ ul {
     width: 80%;
     margin: auto;
 }
-/******************* Projects Page *******************/
+/********************************************************* PROJECTS PAGE *********************************************************/
 .projects-container {
     padding: 0 2rem;
 }
@@ -319,10 +349,7 @@ ul {
     right:1rem;
     bottom: 1rem;
 }
-/******************* Contact Page *******************/
-/* #contact {
-    margin-bottom: 5rem;
-} */
+/********************************************************* CONTACT PAGE *********************************************************/
 .contact-info-box {
     text-align: center;
     display:flex;
@@ -381,8 +408,9 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: #fff;
   -webkit-box-shadow: 0 0 0px 1000px #4D5D6A inset;
+  box-shadow: 0 0 0px 1000px #4D5D6A inset;
 }
-/******************* Footer *******************/
+/********************************************************* FOOTER *********************************************************/
 footer {
     background-color: #2A3941;
     color: #fff;
@@ -415,73 +443,87 @@ footer {
         text-align: left;
         margin-bottom: 1rem;
     }
-    /******* HOME PAGE *******/
+    /******* landing PAGE *******/
+    #landing {
+        height: 100vh;
+    }
     /*navigation to contact page button to be be added (replaces big site navigation buttons)*/
-    #home-nav-contact-special-div {
+    #landing-nav-contact-special-div {
         display: none;
     }
-    .home-hero-blurb-text > h2 {
+    .landing-hero-blurb-text > h2 {
         font-size: 2rem;
     }
-    .home-hero-blurb-text > h1 {
+    .landing-hero-blurb-text > h1 {
         font-size: 4rem;
     }
-    .home-nav-button-div {
+    .landing-nav-button-div {
         display: inline-block;
         padding: 9rem 0 10rem 0;
-
     }
-    .home {
+    .landing {
         height: 30rem;
     }
-    .home-hero-image-div {
+    .landing-hero-image-div {
         padding: 11rem 0 0 1%;
     }
-    .home-hero-image-circle{
+    .landing-hero-image-circle{
         width: 20rem;
         height: 20rem;
     }
-    .home-hero-blurb{
+    .landing-hero-blurb{
         padding: 15rem 0;
     }
-    .home-hero-blurb-text {
+    .landing-hero-blurb-text {
         text-align: left;
     }
-    .home-hero-blurb-text > p {
+    .landing-hero-blurb-text > p {
         padding-right: 30%;
     }
     /******* ABOUT ME PAGE *******/
-    .about-timeline-item {
+    #about {
+        height: 100vh;
+    }
+    /* make the dashed lines appear horizontally */
+    .timeline-dashed-line {
         border-left: none;
-        border-top: .2rem dashed #F4A261;
-        padding-top: 1rem;
-        margin: 3rem 0;
+        border-top:.2rem dashed #F4A261;;
     }
-    .timeline-item-title::before {
-        left: 1rem;
-        top:-.5rem;
+    /* remove the dashed lines from the images */
+    .about-timeline-visual.timeline-dashed-line {
+        border: none;
     }
-    .about-timeline-visual {
-        display: flex;
-        justify-content: space-around;
+    /* move the timeline disc up to the (now) horizontal dashed line */
+    .timeline-item-heading::before {
+        top: -2.3rem;
+        left: 47.5%;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .container-timeline-item {
+        margin: 0;
+        padding-top: 1.5rem
     }
     .about-timeline-image {
-        border: solid;
-        background-color: #E76F51;
-        border: 6px solid #F4A261;
-        background-size: cover;
-        height: 12rem;
-        width: 12rem;
-        border-radius: 50%;
+        height: 15rem;
+        width: 15rem;
     }
-    .about-timeline-image.study {
-        background-image: url('../images/about-study.jpg');
+    .about-timeline-visual {
+        margin: 0 1rem;
+        padding: 2rem 15%;
     }
-    .about-timeline-image.work {
-        background-image: url('../images/about-work.jpg');
+    .timeline-item-description-text {
+        height: 37.5rem;
     }
-    .about-timeline-image.now {
-        background-image: url('../images/about-now.jpg');
+    /******* SKILLS PAGE *******/
+    #skills {
+        height:100vh;
+    }
+    .container-page-content-skills {
+        margin-top: 15vh;
+    }
+    .language-type {
+        font-size: 100%;
     }
     /******* PROJECTS PAGE *******/
     .projects-category{
@@ -499,10 +541,13 @@ footer {
         padding: 0;
     }
     /******* CONTACT PAGE *******/
+    .container-page-content-contact {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
     .contact-info-box {
         flex-flow: column-reverse;
         text-align: left;
-        /* padding-top: 5%; */
         padding-bottom: 25%;
         padding-right: 5%;
         margin-bottom: 0;

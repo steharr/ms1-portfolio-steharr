@@ -48,7 +48,7 @@ In order to offer an interview to the developer I want...
 10. Always within a click's reach of getting in contact
 
 ### **Scope Plane**
-For the Scope plane, I made some key design choices based on my research 
+For the Scope plane, I made some key design choices about how I wanted to set up the site based on my research. From there I was able to compile a list of features that I wanted to implement 
 
 ### **Key Design Choices**
 
