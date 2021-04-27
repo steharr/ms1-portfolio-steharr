@@ -71,21 +71,16 @@ a:hover {
 
 /********************************************************* LANDING PAGE *********************************************************/
 /******************* landing Page Hero Profile Icon *******************/
- /* div containing the hero image */
-.landing-hero-image-div {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-}
-/* styled circular div which houses profile image  */
+/*circular div which houses profile image */
 .landing-hero-image-circle {
-    height: 10rem;
-    width: 10rem;
-    background-color: #E76F51;    
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    margin: 5rem auto 2rem auto;
+    background-color: #E76F51; 
+    border: .75rem solid #F4A261;   
     background-image: url('../images/hero-image.png');
     background-size: cover;
-    border: 1rem solid #F4A261;
-    border-radius: 50%;
-    margin: auto;
 }
 .landing-hero-blurb-text{
     text-align: center;
@@ -98,58 +93,15 @@ a:hover {
     font-family: 'Roboto Slab', monospace;
     font-weight: 600;
     font-size: 2.7rem;
-    padding: 0;
 }
-/******************* landing Page Big Navigation Buttons *******************/
-.landing-nav-button-circle {
-    height: 8rem;
-    width: 8rem;
-    border-radius: 50%;
+.quicklink-contact{
     text-align: center;
-    background:#E76F51;
-    border: 6px solid #F4A261;
-    margin: auto;
-    font-size: 5rem;
 }
-.landing-nav-button-div {
+.landing-navigation {
+    height: 20vh;
+}
+.landing-nav-button-container {
     display: none;
-}
-#landing-nav-contact-special-div{
-    padding: .5rem;
-    margin: 0 30%;
-}
-.landing-nav-contact-special-button{
-    margin: auto;
-    text-align: center;
-    padding: 0.5rem 0;
-    width: 8rem;
-    color: #2b343b;
-    background-color: #E9C46A;
-    font-weight: 600;
-    border-width: 0;
-}
-.landing-nav-button-object {
-    /* insert color palette here */
-    color: #ffff;
-    text-align: center;
-}
-.landing-nav-button-icon {
-    position: relative;
-    bottom: .25rem;
-}
-.landing-nav-button-text {
-    position: relative;
-    color: #ffff;
-    top: 1rem;
-}
-.landing-nav-button-object:hover {
-    /* insert color palette here */
-    color: #E9C46A;
-    text-decoration: none;
-}
-.landing-hero-blurb-text > p {
-    font-size: 1rem;
-    padding: 0;
 }
 /********************************************************* ABOUT PAGE *********************************************************/
 .about-timeline-visual {
@@ -443,42 +395,69 @@ footer {
         text-align: left;
         margin-bottom: 1rem;
     }
-    /******* landing PAGE *******/
+    /******* LANDING PAGE *******/
     #landing {
         height: 100vh;
     }
-    /*navigation to contact page button to be be added (replaces big site navigation buttons)*/
-    #landing-nav-contact-special-div {
+    .quicklink-contact {
         display: none;
     }
-    .landing-hero-blurb-text > h2 {
-        font-size: 2rem;
+    /*** hero information ***/
+    .landing-intro{
+        height: 45vh;
     }
-    .landing-hero-blurb-text > h1 {
-        font-size: 4rem;
+    .landing-intro-visual{
+        padding-top: 20vh;
+        padding-left: 15%;
     }
-    .landing-nav-button-div {
-        display: inline-block;
-        padding: 9rem 0 10rem 0;
+    .landing-intro-blurb{
+        padding-top: 26vh;
+        padding-right: 10%;
     }
-    .landing {
-        height: 30rem;
-    }
-    .landing-hero-image-div {
-        padding: 11rem 0 0 1%;
-    }
-    .landing-hero-image-circle{
-        width: 20rem;
+    .landing-hero-image-circle {
         height: 20rem;
+        width: 20rem;
+        margin: 0;
     }
-    .landing-hero-blurb{
-        padding: 15rem 0;
+    .landing-navigation{
+        height: 50vh;
+    }
+    .landing-navigation{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
     }
     .landing-hero-blurb-text {
-        text-align: left;
+        text-align:left;
     }
-    .landing-hero-blurb-text > p {
-        padding-right: 30%;
+    /*** navigation menu ***/
+    .landing-nav-button-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .landing-nav-button-circle {
+        height: 8rem;
+        width: 8rem;
+        border-radius: 50%;
+        background-color: #E76F51; 
+        border: .5rem solid #F4A261; 
+        font-size: 5rem;
+        text-align: center;
+    }
+    .landing-nav-button-icon {
+        position: relative;
+        bottom: .35rem;
+    }
+    .landing-nav-button-text {
+        position: relative;
+        top: 1rem;
+    }
+    .landing-nav-button-link {
+        transition: color .25s ease-in-out;
+    }
+    .landing-nav-button-link:hover {
+        text-decoration: none;
+        color: #E9C46A;
     }
     /******* ABOUT ME PAGE *******/
     #about {
