@@ -23,6 +23,10 @@ a {
 a:hover {
     color: #fff;
 }
+hr {
+    margin: 3rem 3rem 0 3rem;
+    border-top: .25rem dashed #28424D;
+}
 .bold-font {
     font-weight: 600;
 }
@@ -52,7 +56,8 @@ a:hover {
 #skills,
 #projects,
 #contact {
-    padding-top: 2rem;
+    /* padding added to ensure page headings visible after clicking navbar links */
+    padding-top: 2rem;   
 }
 /********************************************************* SITE NAVBAR *********************************************************/
 .navbar-bottom-border {
@@ -68,7 +73,6 @@ a:hover {
 .bg-gunmetal {
     background-color: #2B343B;
 }
-
 /********************************************************* LANDING PAGE *********************************************************/
 /******************* landing Page Hero Profile Icon *******************/
 /*circular div which houses profile image */
@@ -387,6 +391,7 @@ footer {
     text-align: center;
     font-size: .75rem;
 }
+
 /************************************** MEDIA QUERIES **************************************/
 /* bigger than mobile queries */
 @media screen and (min-width: 576px) {
@@ -395,7 +400,7 @@ footer {
         text-align: left;
         margin-bottom: 1rem;
     }
-    /******* LANDING PAGE *******/
+    /*******************LANDING PAGE*******************/
     #landing {
         height: 100vh;
     }
@@ -459,10 +464,7 @@ footer {
         text-decoration: none;
         color: #E9C46A;
     }
-    /******* ABOUT ME PAGE *******/
-    #about {
-        height: 100vh;
-    }
+    /*******************ABOUT PAGE*******************/
     /* make the dashed lines appear horizontally */
     .timeline-dashed-line {
         border-left: none;
@@ -494,17 +496,11 @@ footer {
     .timeline-item-description-text {
         height: 37.5rem;
     }
-    /******* SKILLS PAGE *******/
-    #skills {
-        height:100vh;
-    }
-    .container-page-content-skills {
-        margin-top: 15vh;
-    }
+    /*******************SKILLS PAGE*******************/
     .language-type {
         font-size: 100%;
     }
-    /******* PROJECTS PAGE *******/
+    /*******************PROJECTS PAGE*******************/
     .projects-category{
         display: block;
         width: 15rem;
@@ -519,11 +515,7 @@ footer {
         justify-content: space-evenly;
         padding: 0;
     }
-    /******* CONTACT PAGE *******/
-    .container-page-content-contact {
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-    }
+    /*******************CONTACT PAGE*******************/
     .contact-info-box {
         flex-flow: column-reverse;
         text-align: left;
@@ -541,7 +533,7 @@ footer {
     #text-large-screen {
         display: inline;
     }
-    /******* FOOTER *******/
+    /*******************FOOTER*******************/
     .footer-item {
         padding-left: 20%;
         padding-right: 10%;
