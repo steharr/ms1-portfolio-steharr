@@ -110,7 +110,10 @@ hr {
 /********************************************************* ABOUT PAGE *********************************************************/
 .about-timeline-visual {
     margin: 0 1rem;
-    padding: 2rem 22%;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 .about-timeline-image {
     border: solid;
@@ -158,7 +161,7 @@ hr {
     display: block;
     position: absolute;
     left: -.6rem;
-    top: .7rem;
+    top: 2rem;
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
@@ -250,25 +253,23 @@ ul {
 }
 /********************************************************* PROJECTS PAGE *********************************************************/
 .projects-container {
-    padding: 0 2rem;
-}
-.projects-category {
-    text-align:left;
-    display:inline-block;
-    padding: 0 1rem;
-    background-color: #272F36;
-    font-weight: 600;
-    font-family: 'Roboto Slab', monospace;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
 }
 .project-card {
-    position:relative;
+    /* position:relative; */
     text-align: left;
     height: 28rem;
+    width: 20rem;
     margin-top: 1rem;
     font-size: 75%;
     background-color: #2A3941;
     border-radius: 0;
     padding: 1rem;
+}
+.project-card-image {
+    object-fit: cover;
 }
 .card-body {
     padding: 0;
@@ -324,7 +325,6 @@ ul {
 }
  .contact-form {
     background-color: #2A3941;
-    /* border: .1rem solid #272F36; */
     color: #fff;
     font-weight:600;
     border-radius: 0;
@@ -393,7 +393,7 @@ footer {
 }
 
 /************************************** MEDIA QUERIES **************************************/
-/* bigger than mobile queries */
+/* Larger than Mobile Screen Queries */
 @media screen and (min-width: 576px) {
     /******* GENERAL *******/
     .page-header {
@@ -465,55 +465,13 @@ footer {
         color: #E9C46A;
     }
     /*******************ABOUT PAGE*******************/
-    /* make the dashed lines appear horizontally */
-    .timeline-dashed-line {
-        border-left: none;
-        border-top:.2rem dashed #F4A261;;
-    }
-    /* remove the dashed lines from the images */
-    .about-timeline-visual.timeline-dashed-line {
-        border: none;
-    }
-    /* move the timeline disc up to the (now) horizontal dashed line */
-    .timeline-item-heading::before {
-        top: -2.3rem;
-        left: 47.5%;
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-    .container-timeline-item {
-        margin: 0;
-        padding-top: 1.5rem
-    }
     .about-timeline-image {
-        height: 15rem;
-        width: 15rem;
-    }
-    .about-timeline-visual {
-        margin: 0 1rem;
-        padding: 2rem 15%;
-    }
-    .timeline-item-description-text {
-        height: 37.5rem;
+        height: 16rem;
+        width: 16rem;
     }
     /*******************SKILLS PAGE*******************/
     .language-type {
         font-size: 100%;
-    }
-    /*******************PROJECTS PAGE*******************/
-    .projects-category{
-        display: block;
-        width: 15rem;
-        margin:auto;
-        text-align: center
-    }
-    .project-card {
-        width: 20rem;
-    }
-    .projects-container{
-        display:flex;
-        justify-content: space-evenly;
-        padding: 0;
     }
     /*******************CONTACT PAGE*******************/
     .contact-info-box {
@@ -540,5 +498,38 @@ footer {
     }
     .footer-item a:hover {
         color: #fff;
+    }
+}
+ /* Large Desktop Screen Queries */
+@media screen and (min-width: 1200px) {
+    /*******************ABOUT PAGE*******************/
+    .timeline-item-description-text {
+        height: 37.5rem;
+    }
+    /* make the dashed lines appear horizontally */
+     .timeline-dashed-line {
+        border-left: none;
+        border-top:.2rem dashed #F4A261;;
+    } 
+    /* remove the dashed lines from the images */
+     .about-timeline-visual.timeline-dashed-line {
+        border: none;
+    } 
+    /* move the timeline disc up to the (now) horizontal dashed line */
+     .timeline-item-heading::before {
+        top: -2.3rem;
+        left: 47.5%;
+        height: 1.5rem;
+        width: 1.5rem;
+    } 
+    /* Change the size of the timeline image */
+     .about-timeline-image {
+        height: 18rem;
+        width: 18rem;
+    } 
+    /* seperate description box from timeline  */
+     .container-timeline-item {
+        margin: 0;
+        padding-top: 1.5rem;
     }
 }
