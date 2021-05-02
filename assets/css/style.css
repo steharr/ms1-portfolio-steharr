@@ -24,6 +24,7 @@ a:hover {
     color: #fff;
 }
 hr {
+    display: block;
     margin: 3rem 3rem 0 3rem;
     border-top: .25rem dashed #28424D;
 }
@@ -252,59 +253,68 @@ ul {
     margin: auto;
 }
 /********************************************************* PROJECTS PAGE *********************************************************/
-.projects-container {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: space-evenly;
-}
 .project-card {
-    /* position:relative; */
-    text-align: left;
-    height: 28rem;
-    width: 20rem;
-    margin-top: 1rem;
-    font-size: 75%;
+    border: none;
+    margin-bottom: 1rem;;
     background-color: #2A3941;
     border-radius: 0;
-    padding: 1rem;
 }
 .project-card-image {
+    height: 50%;
+    padding: 1rem 1rem 0 1rem;
+}
+.project-card-image img {
+    border-radius: 0;
     object-fit: cover;
+    height: 100%;
 }
 .card-body {
-    padding: 0;
-}
-.card-body p{
-    padding: .5rem;
-    background-color: #31515E;
-}
-.tags-container {
-    position: absolute;
-    bottom: 4rem;
-}
-.language-content {
-    font-weight: 600;
-    padding: .5rem;
-}
-.programming-lang-tag {
-    background-color: #E76F51;
-    font-weight: 600;
-    border-radius:.25rem;
-    padding: .25rem;
+    padding-bottom: 0;
+    font-size: 75%;
 }
 .card-title {
     display: inline-block;
     border-bottom: .1rem solid #fff;
     padding-bottom: .25rem;
 }
-.project-card-image{
-    height: 50%;
-    margin-bottom: 1rem;
+.card-text {
+    padding: .25rem;
+    background-color: #31515E;
 }
-.project-card .btn-steharr-standard {
-    position: absolute;
-    right:1rem;
-    bottom: 1rem;
+.card-tags {
+    line-height: 1.5rem;
+}
+.programming-lang-tag {
+    font-weight: 600;
+    border-radius:.25rem;
+    padding: .2rem;
+}
+.color-html-orange {
+    background-color: #e34c26;
+    color: #fafafa;
+}
+.color-css-blue {
+    background-color: #2965f1;
+    color: #fff;
+}
+.color-javascript-yellow {
+    background-color: #f0db4f;
+    color: #323330;
+}
+.color-python-blue {
+    background-color: #306998;
+    color: #FFD43B;
+}
+.color-vba-green {
+    background-color: #1d6f42;
+    color: #fff;
+}
+
+.container-card-link-github {
+    text-align: center;
+}
+.card-link-github {
+    margin-bottom: 1rem;
 }
 /********************************************************* CONTACT PAGE *********************************************************/
 .contact-info-box {
@@ -314,12 +324,10 @@ ul {
     margin-bottom: 1rem;
 }
 .contact-info-box a,
-.contact-info-box p
-{
+.contact-info-box p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
 #text-large-screen {
     display: none;
 }
@@ -394,7 +402,7 @@ footer {
 
 /************************************** MEDIA QUERIES **************************************/
 /* Larger than Mobile Screen Queries */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 780px) {
     /******* GENERAL *******/
     .page-header {
         text-align: left;
@@ -413,11 +421,11 @@ footer {
     }
     .landing-intro-visual{
         padding-top: 20vh;
-        padding-left: 15%;
+        padding-left: 6%;
     }
     .landing-intro-blurb{
         padding-top: 26vh;
-        padding-right: 10%;
+        padding-right: 5%;
     }
     .landing-hero-image-circle {
         height: 20rem;
@@ -473,6 +481,14 @@ footer {
     .language-type {
         font-size: 100%;
     }
+    /*******************PROJECTS PAGE*******************/
+    /* keep all project card heights consistent */
+    .project-card{
+        height: 95%;
+    }
+    .card-text{
+       margin-bottom: .5rem; 
+    }
     /*******************CONTACT PAGE*******************/
     .contact-info-box {
         flex-flow: column-reverse;
@@ -502,6 +518,13 @@ footer {
 }
  /* Large Desktop Screen Queries */
 @media screen and (min-width: 1200px) {
+    /*******************LANDING PAGE*******************/
+    .landing-intro-visual{
+        padding-left: 15%;
+    }
+    .landing-intro-blurb{
+        padding-right: 15%;
+    }
     /*******************ABOUT PAGE*******************/
     .timeline-item-description-text {
         height: 37.5rem;
