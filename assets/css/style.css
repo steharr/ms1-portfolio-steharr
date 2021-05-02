@@ -1,6 +1,5 @@
 /******************* Fonts *******************/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;600&family=Roboto+Slab:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Mono:wght@100;400;500;700&family=Roboto+Slab:wght@400;700&display=swap');
 /******************* General *******************/
 body {
     font-family: 'Roboto Mono', monospace;
@@ -9,7 +8,7 @@ body {
     color:#ffff;
 }
 .page-header {
-    font-family: 'Roboto Slab', monospace;
+    font-family: 'Open Sans', sans-serif;
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
@@ -61,15 +60,11 @@ hr {
     padding-top: 2rem;   
 }
 /********************************************************* SITE NAVBAR *********************************************************/
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+}
 .navbar-bottom-border {
-    border-bottom: 1px solid #96ACB7;
-}
-.nav-link {
-    color: #000000;
-}
-.navbar-brand {
-    color: #000000;
-    font-weight: 100;
+    border-bottom: 1px solid #fff;
 }
 .bg-gunmetal {
     background-color: #2B343B;
@@ -95,7 +90,7 @@ hr {
     padding: 0;
 }
 .landing-hero-blurb-text > h1{
-    font-family: 'Roboto Slab', monospace;
+    font-family: 'Roboto Slab', serif;
     font-weight: 600;
     font-size: 2.7rem;
 }
@@ -190,7 +185,7 @@ hr {
 }
 .language-type {
     padding: 0;
-    font-size:85%;
+    font-size:75%;
 }
 .coding-languages-progress-bar{
     padding: 0;
@@ -204,7 +199,7 @@ hr {
     background: linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
     background: -moz-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
     background: -webkit-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E76F51", endColorstr="#E9C46A", GradientType=1 );
+    /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E76F51", endColorstr="#E9C46A", GradientType=1 ); */
 }
 ul {
     padding:0 0 0 1rem;
@@ -315,6 +310,23 @@ ul {
 }
 .card-link-github {
     margin-bottom: 1rem;
+}
+.ribbon-work-in-progress {
+    background-color: #E76F51;
+    border: .1rem solid #2b343b;
+    color: #2b343b;
+    text-align: center;
+    padding: .2rem;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    width: 9rem;
+    height: 1.5rem;
+    border-radius: 2%;
+}
+.ribbon-work-in-progress h5 {
+font-size: 80%;
+padding: 0;
 }
 /********************************************************* CONTACT PAGE *********************************************************/
 .contact-info-box {
