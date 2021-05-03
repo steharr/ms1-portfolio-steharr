@@ -133,9 +133,10 @@ The **Gunmetal** color was useful for the less dominant elements of the site suc
 
 
 
-<!-- #### **Features**
+## Features
 
-#### Base Site
+### Existing Features
+<!-- #### Base Site
 
 There are * key features present throughout the site:
 
@@ -185,18 +186,18 @@ Since I am undergoing a change in career, I decided to design the "About" sectio
 
 * ##### Cards View
 
-#### Contact Section
+#### Contact Section 
 
-* ##### Contact Me Section form
-### Existing Features -->
+* ##### Contact Me Section form -->
+
+
 <!-- - Feature 1 - allows users X to achieve Y, by having them fill out Z
 - ...
-
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future: -->
 
-<!-- ### Features Left to Implement -->
+### Features Left to Implement
 <!-- - Another feature idea -->
 <!-- blog, excel vba courses -->
 
@@ -209,6 +210,74 @@ In addition, you may also use this section to discuss plans for additional featu
 
 
 ## Testing
+The site was developed using the VSCode Editor. During development, I regularly tested the output of my code using the LiveServer extension to see how the page was being rendered in a Chrome browser. Multiple screen sizes were evaluated during this process using Chrome Dev Tools. 
+After the bulk of the development was complete, I tested my code by putting it through the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and then checked its performace using Lighthouse in Chrome Dev Tools. The final period of testing was done by validating the site against each of my User stories.
+
+### Large Bugs Occuring During Development & Lessons Learned
+During the development phase of the site, I encountered a number of signifcant bugs while testing the output of my code. These are documented below:
+#### **Misplaced Nav Bar**
+
+<img src="assets\documents\testing\error_misplaced_navbar.png" alt="drawing" width="250"/> 
+
+* **Description**  
+Early on, an issue ocurred where the nav bar of the site was not appearing fixed to the top of the screen for both desktop and mobile devices even though the bootstrap 'fixed-top' class had been used.  
+* **Root Cause and Fix**  
+To troubleshoot this issue I removed individual HTML elements one at a time from the page and analyzed how the site then appearred. I eventually found the root cause to be an empty line of code above the body element of my page. This was creating a new line that was empty before the navbar in the site. Removing this line in my code corrected the issue.
+
+#### **HTML Body Width Error**
+
+<img src="assets\documents\testing\error_html_body_width.png" alt="drawing" width="300"/> 
+
+* **Description**  
+Late on in development, I noticed that the footer of the site was not spanning the width of the viewport on Ipad screens only. This was especially confusing since the element had the **container-fluid** class. Looking into Chrome Dev Tools, I could see that the width of the html element in the page was not covering the entire width of the Ipad screen.
+* **Root Cause and Fix**   
+To troubleshoot this issue, I did some research online and came across [this post on stack overflow with a similar issue.](https://stackoverflow.com/questions/30358630/html-body-not-filling-complete-width-on-mobile-devices) I then determined that the issue was being caused by text overflow somewhere on the page. This theory was backed up by the fact that the issue was only occuring on the Ipad, which was showing text overflow on the **About** and **Projects** pages of the site. To fix this issue I refactored the code for both of these pages.
+
+### HTML Validator Results
+After passing my code through the HTML validator for the first time, I recieved 7 error messages and a one repeated warning.
+#### Error Messages
+* Empty ID on Landing Page
+
+   <img src="assets\documents\testing\html_validator_empty_id.png" alt="empty id tag error" width="500"/>
+
+   This was missed during development. Corrected by removing the empty id attribute. 
+* Paragraph element entered as direct child of unordered list element
+
+   <img src="assets\documents\testing\html_validator_paragraph_ul.png" alt="paragraph child of unordered list error" width="500"/>
+
+   For the list of software expertise items on the skills page, I had accidentally put paragraph elements as children of the unordered list. The list already had **li** elements containing the headings for these paragraphs, therefore I could easily move the paragraph elements into them to amend this error.
+
+* Stray i Tag
+
+   <img src="assets\documents\testing\html_validator_stray_i.png" alt="stray i tag error" width="500"/>
+
+   This stray tag was likely added when adding font awesome icons. Corrected by removing the tag. 
+
+* Semicolon Typo on Contact Page
+
+   <img src="assets\documents\testing\html_validator_semicolon_typo.png" alt="semicolon typo error" width="500"/>
+
+   Corrected by removing the semicolon before the equals sign
+
+* Character Reference in Footer Not Terminated by Semicolon
+
+   <img src="assets\documents\testing\html_validator_character_reference.png" alt="character reference error" width="500"/>
+
+   When adding a copyright symbol to the footer of my page, I had forgotten to add a semi colon to the end of the character reference. From researching this error online, I found out that it is best practice to always include it even though it can sometimes be ommitted. The error was corrected by adding it in. 
+
+#### Warnings
+
+* Document not Mappable to XML 1.0
+
+   <img src="assets\documents\testing\html_validator_xml.png" alt="xml warning" width="500"/>
+
+   As the site code was contained all in one html file, in order to easily distinguish by eye each section of the page while coding I added wide comments around each section. This had brought about multiple warnings from the HTML validator. To remove this warning, I adjusted the comments to be the normal size.
+
+### CSS Validator
+
+### Lighthouse Performance
+
+### User Stories Validation
 
 <!-- In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
