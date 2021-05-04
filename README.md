@@ -68,7 +68,7 @@ For the structure of the site I decided to include the key elements of a resume/
 
 #### Site Structure:
 
-`1. Header Nav Bar`
+`1. Header Nav Bar`  
 The header of the site contains a horizontal navbar which houses links to each section of the site. It also contains a brand name for the site. The brand acts as a home button which links to the landing page of the site. The brand name is SteHarr - a combination of my first and second name and also my GitHub User name. The navbar is fixed at the top of the page as the user scrolls down the site. This is done to satisfy user story 10.
 
 `2. Landing Page`  
@@ -86,7 +86,7 @@ For the projects page I decided to use a card layout. Each card is a seperate pr
 `6. Contact`  
 The contact page contains a descriptive text section and simple static contact form. The text section encourages the user to fill out the form if they want to get in touch and gives my email address if the viewer would prefer to write an email. If the viewer wants more details, this section also includes a link to a downloadable version of my CV.
 
-`7. Footer`
+`7. Footer`  
 The footer is visible on the contact page section of the site. It contains a short blurb and a social section which contains links to my social media. There is also a copyright watermark at the bottom of the footer. 
 
 
@@ -110,110 +110,62 @@ In order to choose an overall color palette for the page, I used the color schem
 |Gunmetal| ![#272F36](https://via.placeholder.com/15/272F36/000000?text=+) `#272F36` | Contact form input boxes and coding language progress bars|
 |Gunmetal| ![#2B343B](https://via.placeholder.com/15/2B343B/000000?text=+) `#2B343B` | Footer and Header Navbar|
 |Gunmetal| ![#2A3941](https://via.placeholder.com/15/2A3941/000000?text=+) `#2A3941` | Skills box, project cards and contact form|
-|Charcoal| ![#293D47](https://via.placeholder.com/15/293D47/000000?text=+) `#293D47` | |
 |Charcoal| ![#264653](https://via.placeholder.com/15/264653/000000?text=+) `#264653` | Main background color of page|
 |Orange Yellow Crayola| ![#E9C46A](https://via.placeholder.com/15/E9C46A/000000?text=+) `#E9C46A` | All site buttons, percentage bar gradients, <br> about page timeline items, footer social links|
 |Sandy Brown| ![#F4A261](https://via.placeholder.com/15/F4A261/000000?text=+) `#F4A261` | Landing page navigation buttons and hero image border, <br> about page timeline dashed line|
-|Burnt Sienna| ![#E76F51](https://via.placeholder.com/15/E76F51/000000?text=+) `#E76F51` | Landing page navigation buttons and hero image background,<br> skills page expertise headers, project cards language tags |
-
+|Burnt Sienna| ![#E76F51](https://via.placeholder.com/15/E76F51/000000?text=+) `#E76F51` | Landing page navigation buttons and hero image background,<br> skills page expertise headers |
 
 For my user stories I had identified that I wanted the experience of the site to be enjoyable and smooth for a recruiter. I was conscious of the fact that they they are likely going through numerous job applications on a daily basis which could be an arduous task. With this in mind, I wanted the base color of the site to be a dark neutral color that was easy on the eyes. The **Charcoal** color was perfect for this objective. 
 
-Having the base color to be darker allowed me to use brighter colors for the elements on the page which would make them stand out. **Burnt Sienna**, **Mandarin**, **Sandy Brown** and **Orange Yellow Crayola** contrasted very well with the **Charcoal** background of the site. 
+Having the base color to be darker allowed me to use brighter colors for the elements on the page which would make them stand out. **Burnt Sienna**, **Mandarin**, **Sandy Brown** and **Orange Yellow Crayola** contrasted very well with the **Charcoal** background of the site to achieve this effect
 
 The **Gunmetal** color was useful for the less dominant elements of the site such as the navbar and the footer.
 
 #### Font Pairings
 
-<!-- How color palette was used -->
-
-<!-- Icons -->
-<!-- Projects & Skills page card designs -->
-
-
-
 
 ## Features
 
 ### Existing Features
-<!-- #### Base Site
 
-There are * key features present throughout the site:
-
-* ##### Overhead Horizontal Navbar
-
-* ##### Navbar Responsiveness
-
-* ##### Navbar Transition
-
-* ##### Smooth Scrolling
-   The site is contained in one single long html file that is split up into 5 sections. The viewer scrolls progressively downwards through the site.
-
-#### Landing Page
-
-I designed the landing page to quickly summarise the my profile and entice the viewer to move deeper into the site. Key features of this section include:
-
-* ##### Blurb with Profile Image
-   The landing page has an opening summary blurb of the site owner with circular profile image in order to get the viewer quickly familarised with the site owner appearance. This creates an image in the recruiters mind of the applicant.
-
-* ##### Site Large Navigation Section
-   The landing page has a set of large circular site navigation buttons in order to allow the viewer the option to jump to a particular section of interest once they have read the summary blurb. These buttons link to the "About" section, "Skills" section, "Projects" section and the "Contact" section. 
-
-* ##### Site Large Navigation Buttons Responsiveness
-   The buttons also respond to mobile screens. All buttons disapear except for the "Contact" section button. This design decision was made due to the size of the mobile screen being too small for these buttons. As well as this the nav bar which contains the same options is more present on a mobile device. The only button left on mobile (i.e. the "Contact" button) is prioritised on mobile devices as it is arguably the most important button for advanicing the site owners goals   
-
-* ##### Site Large Navigation Buttons Transitons (not finished)
-
-#### About Me Section
-
-Since I am undergoing a change in career, I decided to design the "About" section in a timeline format in order to give historical context to a recuriter about how I have come to the decision to pursue a coding career. In doing this I am also highlighting all of the elements of my profile which will be transferrable to a coding career. The section condenses three traditional parts of a regular CV (education, work history & key projects) into one compact page.
-
-* ##### About Me Section Timeline
-   The timeline of the section starts with my college education, then moves to my work experience and finally to a description of the studies I am doing now with Code Institute
-
-* ##### About Me Section Latest Project Bubble
-   Next to the timeline is a "Latest Project" bubble which will give a brief overview of what I am currently working on. It also gives an option to allow the user to skip to the projects section of the site
-
-#### Skills Section
-
-* ##### Coding Languages Progress Bars
-
-* ##### Technologies/ Misc 
-
-* ##### Skills Section Responsiveness
-
-#### Projects Section
-
-* ##### Cards View
-
-#### Contact Section 
-
-* ##### Contact Me Section form -->
-
-
-<!-- - Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future: -->
+|Feature|Description|Location|
+|:--:|:--:| :--:|
+|Responsive Fixed Navbar| Overhead navigation bar that is fixed top throughout the  site. Contains links to all sections of the site. Collapses to hamburger menu on smaller screens| All pages of the site. Fixed to top of viewport |
+|Responsive Landing Page Navigation Menu| Navigation menu with large circular buttons which are quicklinks to all pages of the site. Responds to smaller screens by transforming into a single **Contact** button. [ScrollReveal](https://scrollrevealjs.org/) transition effect for buttons to make them blend into view | Landing Page |
+|Responsive Education and Work History Timeline |Timeline on the **About** page which displays horizontally or vertically based on screen size. Includes positioned timeline dots which have accompanying images and descriptions | About Page |
+|Coding Languages Progress Bars| Customized Bootstrap progress bars used to visually display relative skill level for specific coding languages and frameworks | Skills Page |
+|Project Cards| Customized Bootstrap project cards used to visually display project portfolio. Cards include thumbnails, descriptions, coding languages tags and links to the projects on Github. Work in progress banners also included for projects not completed. Projects are contained within a flexbox to ensure that new projects can be easily added to the portfolio without destroying responsive layout of section.| Projects Page |
+|Responsive Contact Page Layout| Contact page instructions respond to screen size i.e. on Desktop, since contact form is displayed on the right side of the screen, the contact page instructions inform the viewer to *"Please fill in the form on the **right**"*. Whereas on Mobile screens since the form is below, the instructions refer to a form **below** the instructions  | Contact Page |
+|Contact Form| Contact form with submit button to allow the user to get in touch. Form appearance customized in line with aesthetic of site. One particular element to mention: Chrome autofill field colors have been adjusted in line with site color palette | Contact Page |
 
 ### Features Left to Implement
-<!-- - Another feature idea -->
-<!-- blog, excel vba courses -->
+There were a few features which I had brainstormed early on which could not be achieved either due to time constraints or that they were beyond the scope of my skills. I will look to implement them in a future release: 
+
+* Navigation Menu Buttons User Interface Improvements
+* ScrollReveal Effect Throughout Site 
+* Interactive Skills Page
+* Project Cards Improvements
+* Contact Form Functionality
+* VBA Tutorial Blog
 
 ## Technologies Used
 
-<!-- In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation. -->
-
+* HTML and CSS
+* Boostrap Framework
+* Font Awesome
+* ScrollReveal API
+* VS Code
+* Live Server VS Code Extension
+* Git
+* GitHubr
+* [Canva](https://www.canva.com/)
+* [Placeholder.com](https://placeholder.com/)
 
 ## Testing
-The site was developed using the VSCode Editor. During development, I regularly tested the output of my code using the LiveServer extension to see how the page was being rendered in a Chrome browser. Multiple screen sizes were evaluated during this process using Chrome Dev Tools. 
+During development, I regularly tested the output of my code using the VSCode [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to see in real time how changes made in the code affected how the page was being rendered in a Chrome browser. Multiple screen sizes were evaluated during this process using Chrome developer tools. 
 After the bulk of the development was complete, I tested my code by putting it through the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and then checked its performace using Lighthouse in Chrome Dev Tools. The final period of testing was done by validating the site against each of my User stories.
 
-### Large Bugs Occuring During Development & Lessons Learned
+### Bugs Occuring During Development & Lessons Learned
 During the development phase of the site, I encountered a number of signifcant bugs while testing the output of my code. These are documented below:
 #### **Misplaced Nav Bar**
 
@@ -229,12 +181,15 @@ To troubleshoot this issue I removed individual HTML elements one at a time from
 <img src="assets\documents\testing\error_html_body_width.png" alt="drawing" width="300"/> 
 
 * **Description**  
-Late on in development, I noticed that the footer of the site was not spanning the width of the viewport on Ipad screens only. This was especially confusing since the element had the **container-fluid** class. Looking into Chrome Dev Tools, I could see that the width of the html element in the page was not covering the entire width of the Ipad screen.
+Late on in development, I noticed that the footer of the site was not spanning the width of the viewport on Ipad screens only. This was especially confusing since the element had the **container-fluid** class. Looking into Chrome developer tools, I could see that the width of the html element in the page was not covering the entire width of the Ipad screen.
 * **Root Cause and Fix**   
 To troubleshoot this issue, I did some research online and came across [this post on stack overflow with a similar issue.](https://stackoverflow.com/questions/30358630/html-body-not-filling-complete-width-on-mobile-devices) I then determined that the issue was being caused by text overflow somewhere on the page. This theory was backed up by the fact that the issue was only occuring on the Ipad, which was showing text overflow on the **About** and **Projects** pages of the site. To fix this issue I refactored the code for both of these pages.
 
+#### **Live Site Contact Form Rounded Input Boxes**
+
 ### HTML Validator Results
-After passing my code through the HTML validator for the first time, I recieved 7 error messages and a one repeated warning.
+After passing my code through the HTML validator for the first time, I recieved 7 error messages and a one repeated warning. These errors and warnings were all corrected and the validator check was done again. The check check produced no errors or warnings. Below is how each of the initial validator check results were addressed:
+
 #### Error Messages
 * Empty ID on Landing Page
 
@@ -274,8 +229,34 @@ After passing my code through the HTML validator for the first time, I recieved 
    As the site code was contained all in one html file, in order to easily distinguish by eye each section of the page while coding I added wide comments around each section. This had brought about multiple warnings from the HTML validator. To remove this warning, I adjusted the comments to be the normal size.
 
 ### CSS Validator
+After passing my code through the CSS validator for the first time, there were 2 errors and numerous warnings appearing on the site. Upon further inspection I saw that many of these results were linked to external files I had referenced in my code e.g. via Bootstrap CDN links. Since these results were not linked to my code I re-ran the check exclusively for my stylesheet using the link "https://steharr.github.io/ms1-portfolio-steharr/assets/css/style.css". The validator produced 23 warnings for my code. Below is how each of the initial validator check results were investigated:
 
-### Lighthouse Performance
+#### Warnings
+
+* Unknown Vendor Extensions 
+
+   <img src="assets\documents\testing\css_validator_vendor.png" alt="vendor prefix warning" width="500"/>
+
+  There were multiple vendor prefixes used in my code used in order to ensure compatability across different browsers. From researching this validator warning online, I understood that these vendor extensions are outside of the scope of the validator since they are proprietary code. Therefore I did not need to address them.
+
+* Same color for **background-color** and **border-top-color**
+
+   <img src="assets\documents\testing\css_validator_color.png" alt="color warning" width="500"/>
+
+   The background color of the timeline images on the **About** had been mistakenly set to the same color as their borders. This was amended so that the background color was the same as the background color of the buttons on the **Landing Page**
+
+### Lighthouse
+To analyse the Performance, Accessibilty and User Experience of my site, I used [Lighthouse] (https://developers.google.com/web/tools/lighthouse) in Chrome developer tools.
+
+#### Mobile Results
+The initial results for mobile were as below:
+
+   <img src="assets\documents\testing\lighthouse_results_initial_mobile.png" alt="color warning" width="500"/>
+
+#### Desktop Results
+The initial results for desktop were as below:
+
+   <img src="assets\documents\testing\lighthouse_results_initial_desktop.png" alt="color warning" width="500"/>
 
 ### User Stories Validation
 
