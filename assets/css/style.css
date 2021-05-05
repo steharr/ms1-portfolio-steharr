@@ -121,13 +121,13 @@ hr {
     border-radius: 50%;
 }
 .about-timeline-image.study {
-    background-image: url('../images/about-study.jpg');
+    background-image: url('../images/about-study.png');
 }
 .about-timeline-image.work {
-    background-image: url('../images/about-work.jpg');
+    background-image: url('../images/about-work.png');
 }
 .about-timeline-image.now {
-    background-image: url('../images/about-now.jpg');
+    background-image: url('../images/about-now.png');
 }
 .timeline-dashed-line {
     border-left: .2rem dashed #F4A261;
