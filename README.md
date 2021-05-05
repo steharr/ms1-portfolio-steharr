@@ -246,17 +246,31 @@ After passing my code through the CSS validator for the first time, there were 2
    The background color of the timeline images on the **About** had been mistakenly set to the same color as their borders. This was amended so that the background color was the same as the background color of the buttons on the **Landing Page**
 
 ### Lighthouse
-To analyse the Performance, Accessibilty and User Experience of my site, I used [Lighthouse] (https://developers.google.com/web/tools/lighthouse) in Chrome developer tools.
+To analyse the Performance, Accessibilty and User Experience of my site, I used [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome developer tools.
 
-#### Mobile Results
+#### Results
 The initial results for mobile were as below:
 
-   <img src="assets\documents\testing\lighthouse_results_initial_mobile.png" alt="color warning" width="500"/>
+   <img src="assets\documents\testing\lighthouse_results_initial_mobile.png" alt="initial lighthouse results for mobile" width="500"/>
 
-#### Desktop Results
 The initial results for desktop were as below:
 
-   <img src="assets\documents\testing\lighthouse_results_initial_desktop.png" alt="color warning" width="500"/>
+   <img src="assets\documents\testing\lighthouse_results_initial_desktop.png" alt="initial lighthouse results for mobile" width="500"/>
+
+* Improving Performance Score  
+From looking at the metrics provided by Lighthouse, the element with the largest contentful paint (LCP) on the page was having the greatest effect on my performance score. The element mentioned was one of the project page card images, the Love Running project image. This element had a 500 x 500 px sized image with lots of detail. I decided to resize the image in line with the size that it was actually being display as on the biggest screen the site could be viewed on (i.e. a desktop). I checked Chrome dev tools to get the dimensions what the image was being displayed at and then used a website called [resizeimage.net](https://resizeimage.net/) to resize the image. This made the file size much smaller. I also repeated this process for multiple other images throughout the site to improve the site performance further.
+
+* Improving Best Practices Score   
+From looking at the best practices analysis provided by Lighthouse, I saw a warning that "Links to cross-origin destinations are unsafe". From researching this online, I discovered that there is a security vulnerability with Javascript that can allow a new tab to gain control of its referring window which malicious websites can exploit. The recommended approach to counter this is to use a `rel="noopener"` attribute in all anchor elements which contain `target="_blank"`. I therefore added this attribute to the elements in my site
+
+The final results for mobile were as below:
+
+   <img src="assets\documents\testing\lighthouse_results_final_mobile.png" alt="final lighthouse results for mobile" width="500"/>
+
+The final results for desktop were as below:
+
+   <img src="assets\documents\testing\lighthouse_results_final_desktop.png" alt="final lighthouse results for mobile" width="500"/>
+
 
 ### User Stories Validation
 
