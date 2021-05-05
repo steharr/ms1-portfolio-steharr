@@ -1,6 +1,10 @@
-# **Stephen Harrold Personal Portfolio / CV Website**
+# [**Stephen Harrold Personal Portfolio / CV Website**](https://steharr.github.io/ms1-portfolio-steharr/)
 
-As part of my Code Institute course studies, I have created this personal portfolio / CV website for my first milestone project. The site owner is myself and the primary goal for creating the site is to get a job in software development. The target site viewers are recruiters; they will be visting this site when they are looking at my job application. Presenting my skills, experience and projects in the form of a website distinguishes me from others in the mind of the recruiter and hopefully helps to relieve the repetition of the hiring process for them.  
+As part of my Code Institute course studies, I have created this personal portfolio / CV website for my first milestone project. the site link is available [here](https://steharr.github.io/ms1-portfolio-steharr/)
+
+<img src="assets\documents\mockup\mockup-steharr-portfolio.PNG" alt="initial lighthouse results for mobile" width="800"/>
+
+The site owner is myself and the primary goal for creating the site is to get a job in software development. The target site viewers are recruiters; they will be visting this site when they are looking at my job application. Presenting my skills, experience and projects in the form of a website distinguishes me from others in the mind of the recruiter and hopefully helps to relieve the repetition of the hiring process for them.  
 
 The website is mobile first and built using HTML, CSS and Bootstrap. 
 
