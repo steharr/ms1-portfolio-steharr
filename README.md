@@ -1,6 +1,6 @@
 # [**Stephen Harrold Personal Portfolio / CV Website**](https://steharr.github.io/ms1-portfolio-steharr/)
 
-As part of my Code Institute course studies, I have created this personal portfolio / CV website for my first milestone project. the site link is available [here](https://steharr.github.io/ms1-portfolio-steharr/)
+As part of my Code Institute course studies, I have created this personal portfolio / CV website for my first milestone project. The site link is available [here](https://steharr.github.io/ms1-portfolio-steharr/)
 
 <img src="assets\documents\mockup\mockup-steharr-portfolio.PNG" alt="initial lighthouse results for mobile" width="800"/>
 
@@ -9,7 +9,7 @@ The site owner is myself and the primary goal for creating the site is to get a 
 The website is mobile first and built using HTML, CSS and Bootstrap. 
 ***
 ## **UX**
-The **five planes of user experience design** developed by Jesse Jame Garrett was used as the conceptual framework for the development process of this site
+The **five planes of user experience design** developed by Jesse James Garrett was used as the conceptual framework for the development process of this site
 
 ### **Strategy Plane**
 For the strategy plane, there were two perspectives I needed to take into account when planning out the strategy of my site. These perspectives would help me to create a list of user stories to use when designing the site. These perspectives were:
@@ -125,8 +125,10 @@ Having the base color to be darker allowed me to use brighter colors for the ele
 
 The **Gunmetal** color was useful for the less dominant elements of the site such as the navbar and the footer.
 
-#### Font Pairings
-
+#### Fonts
+* For the primary font of the site I chose [**Roboto Mono**](https://fonts.google.com/specimen/Roboto+Mono?query=roboto+mono#standard-styles)
+* To accompany this font, I chose [**Roboto Slab**](https://fonts.google.com/specimen/Roboto+Slab?query=roboto+slab) for the main title on the **Landing** page.
+* For each of the page headings, I used [**Open Sans**](https://fonts.google.com/specimen/Open+Sans?query=open+sans)
 
 ***
 ## Features
@@ -145,22 +147,22 @@ The **Gunmetal** color was useful for the less dominant elements of the site suc
 There were a few features which I had brainstormed early on which could not be achieved either due to time constraints or that they were beyond the scope of my skills. I will look to implement them in a future release: 
 
 * Navigation Menu Buttons User Interface Improvements  
-For a future release, I would like to add more animation and visual feedback to the navigation menu buttons on the landing page
+For a future release, I would like to add more animation and visual feedback to the navigation menu buttons on the **Landing** page
 
 * ScrollReveal Effect Throughout Site   
-Since it is a one page site, I want to expand the use of the ScrollReveal effect which I used on the landing page navigation menu. Adding this effect would make scrolling down the site more pleasant for the site viewer
+Since it is a one page site, I want to expand the use of the ScrollReveal effect which I used on the **Landing** page navigation menu. Adding this effect would make scrolling down the site more pleasant for the site viewer
 
 * Interactive Skills Page  
-At the moment the skills page is quite static. I would like to add some more effects to make it more interactive.
+At the moment the **Skills** page is quite static. I would like to add some more effects to make it more interactive.
 
 * Project Cards Improvements  
-I have multiple ideas to improve the project card appearance in the **Projects** page. These ideas include: Adding links to the projects' live site, repositioning the coding language tags to the bottom of the card, adding a change of image when hovering over the project images.
+I have multiple ideas to improve the project card appearance in the **Projects** page. These ideas include: Adding links to the projects' live site, repositioning the coding language tags to the bottom of the card, adding an effect when hovering over the project images.
 
 * Contact Form Functionality  
 At the moment the contact form is not functional as this was out of scope for this project. I will look to update this in future.
 
 * VBA Tips/Tutorial Blog  
-I use Visual Basic for Applications (VBA) alot in my work to automate Excel tasks. I would like at some point to include a section in the site which gives tips and tutorials on how to make good Excel Add-Ins with VBA. I want to pass on some of the knowledge I have learned as I found it to be a very helpful and beneficial language to learn as someone new to programming.
+I got interested in programming by learning Visual Basic for Applications (VBA) in my work to automate Excel tasks. I would like at some point to include a section in my site which gives tips and tutorials on how to make good Excel Add-Ins with VBA. I want to pass on some of the knowledge I have learned as I found it to be a very helpful and beneficial language to learn as someone new to programming.
 
 ## Technologies Used
 
@@ -174,6 +176,8 @@ For markup
 For styling the site
 * [Boostrap Framework](https://getbootstrap.com/)  
 I used the bootstrap grid system to help me design responsive layouts and I made customized versions of various boostrap components throughout the page
+* [Google Fonts](https://fonts.google.com/)  
+For the font used in the site
 * [Font Awesome](https://fontawesome.com/)  
 Used for icons throughout the site
 * [ScrollReveal](https://scrollrevealjs.org/)  
@@ -192,7 +196,7 @@ Used to resize images on the page to improve Lighthouse scores
 I used this site to create small blocks of color for the color palette section of this README
 ***
 ## Testing
-During development, I regularly tested the output of my code using the VSCode [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to see in real time how changes made in the code affected how the page was being rendered in a Chrome browser. Multiple screen sizes were evaluated during this process using Chrome developer tools. 
+During development, I regularly tested the output of my code using the VSCode [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to see in real time how changes made in the code affected how the page was being rendered in a Chrome browser. Multiple screen sizes were evaluated during this process using Chrome developer tools.
 After the bulk of the development was complete, I tested my code by putting it through the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and then checked its performace using Lighthouse in Chrome Dev Tools. The final period of testing was done by validating the site against each of my User stories.
 
 ### **Notable Bugs Occuring During Development**
@@ -223,11 +227,11 @@ To troubleshoot this issue, I did some research online and came across [this pos
 After deploying the site to Github pages, I noticed when viewing the live site on my Iphone that the contact form fields had rounded corners which I had not intended. The aesthetic of the form was designed to be all straight edges. For some reason this was not visible when I was testing the site through Chrome developer tools on my desktop, even when selecting the Iphone frame.
 
 * **Root Cause and Fix**   
-To address this I initially set the `border-radius` to equal zero in my css rule for these elements. This did not fix the issue so I did some reasearch and found that the mobile version of safari can often make HTML input elements looks different to what appears on desktop. I found [this article on medium.com](https://medium.com/@martinbottanek/how-to-disable-rounded-corners-on-input-fields-using-safari-iphone-ipad-2d08a199c39c) which gave me the vendor prefixes and css code to override this and get my desired effect.
+To address this I initially set the `border-radius` to equal zero in my css rule for these elements. This did not fix the issue so I did some research and found that the mobile version of safari can often make HTML input elements looks different to what appears on desktop. I found [this article on medium.com](https://medium.com/@martinbottanek/how-to-disable-rounded-corners-on-input-fields-using-safari-iphone-ipad-2d08a199c39c) which gave me the vendor prefixes and css code to override this and get my desired effect.
 
 
 ### HTML Validator Results
-After passing my code through the HTML validator for the first time, I recieved 7 error messages and a one repeated warning. These errors and warnings were all corrected and the validator check was done again. The check check produced no errors or warnings. Below is how each of the initial validator check results were addressed:
+After passing my code through the HTML validator for the first time, I recieved 7 error messages and a one repeated warning. These errors and warnings were all corrected and the validator check was done again. The second check produced no errors or warnings. Below is how each of the initial validator check results were addressed:
 
 #### Error Messages
 * Empty ID on Landing Page
@@ -239,7 +243,7 @@ After passing my code through the HTML validator for the first time, I recieved 
 
    <img src="assets\documents\testing\html_validator_paragraph_ul.png" alt="paragraph child of unordered list error" width="500"/>
 
-   For the list of software expertise items on the skills page, I had accidentally put paragraph elements as children of the unordered list. The list already had **li** elements containing the headings for these paragraphs, therefore I could easily move the paragraph elements into them to amend this error.
+   For the list of software expertise items on the skills page, I had accidentally put paragraph elements as children of the unordered list. The list already had `<li>` elements containing the headings for these paragraphs, therefore I could easily move the paragraph elements into them to amend this error.
 
 * Stray end `<i>` Tag
 
@@ -265,10 +269,10 @@ After passing my code through the HTML validator for the first time, I recieved 
 
    <img src="assets\documents\testing\html_validator_xml.png" alt="xml warning" width="500"/>
 
-   As the site code was contained all in one html file, in order to easily distinguish by eye each section of the page while coding I added wide comments around each section. This had brought about multiple warnings from the HTML validator. To remove this warning, I adjusted the comments to be the normal size.
+   As the site code was contained all in one html file, in order to easily distinguish by eye each section of the page while coding, I had added wide comments around each section. This had brought about multiple warnings from the HTML validator. To remove this warning, I adjusted the comments to be the normal size.
 
 ### CSS Validator
-After passing my code through the CSS validator for the first time, there were 2 errors and numerous warnings appearing on the site. The errors given were related to external files I had referenced in my code e.g. via Bootstrap CDN links. Since these results were not linked to my code I focused solely and the messages related to my code. The overall results from the validator produced 23 warnings for my code. Below is how each of the initial validator check results were investigated:
+After passing my code through the CSS validator for the first time, there were 2 errors and numerous warnings appearing on the site. The errors given were related to external files I had referenced in my code i.e. Bootstrap CDN links. Since these results were not linked to my code I focused solely and the messages related to my code. The overall results from the validator produced 23 warnings for my code. Below is how each of the initial validator check results were investigated:
 
 #### Warnings
 
@@ -297,7 +301,7 @@ The initial results for desktop were as below:
    <img src="assets\documents\testing\lighthouse_results_initial_desktop.png" alt="initial lighthouse results for mobile" width="500"/>
 
 * Improving Performance Score  
-From looking at the metrics provided by Lighthouse, the element with the largest contentful paint (LCP) on the page was having the greatest effect on my performance score. The element mentioned was one of the project page card images, the Love Running project image. This element had a 500 x 500 px sized image with lots of detail. I decided to resize the image in line with the size that it was actually being display as on the biggest screen the site could be viewed on (i.e. a desktop). I checked Chrome dev tools to get the dimensions what the image was being displayed at and then used a website called [resizeimage.net](https://resizeimage.net/) to resize the image. This made the file size much smaller. I also repeated this process for multiple other images throughout the site to improve the site performance further.
+From looking at the metrics provided by Lighthouse, the element with the largest contentful paint (LCP) on the page was having the greatest effect on my performance score. The element mentioned was one of the project page card images, the Love Running project image. This element had a 500 x 500 px sized image with lots of detail. I decided to resize the image in line with the size that it was actually being displayed as on the biggest screen the site could be viewed on (i.e. a desktop). I checked Chrome dev tools to get the dimensions of what the image was being displayed at and then used a website called [resizeimage.net](https://resizeimage.net/) to resize the image. This made the file size much smaller. I also repeated this process for multiple other images throughout the site to improve the site performance further.
 
 * Improving Best Practices Score   
 From looking at the best practices analysis provided by Lighthouse, I saw a warning that "Links to cross-origin destinations are unsafe". From researching this online, I discovered that there is a security vulnerability with Javascript that can allow a new tab to gain control of its referring window which malicious websites can exploit. The recommended approach to counter this is to use a `rel="noopener"` attribute in all anchor elements which contain `target="_blank"`. I therefore added this attribute to the elements in my site
@@ -316,10 +320,10 @@ _\*Since running the final lightouse test for mobile shown here, the performance
 _**Note:** For this validation, to make it easy to distinguish between the user stories for each perspective that I outlined in my **Strategy** section, I will abbreviate the Site Owner user stories with the letter **O** (for owner) and for the site viewer User Stories with the letter **V** (for viewer)_ 
 
 **O1 - "with this site I want to get offers for jobs in software development"**  
-Of all of the user stories this is the only one which cannot be fully validated yet as I have not yet used this site for job applications. I am confident however that it will be very satisfy this in the future.
+Of all of the user stories this is the only one which cannot be fully validated yet as I have not yet used this site for job applications. I am confident however that it will satisfy this in the future.
 
 **O2 - "with this site I want display my strongest traits to the site visitor: Creativity, Problem Solver, Enthusiastic Learner"**   
-Creativity is demonstrated by overall aesthetic of the site. Problem solving skills can be seen in the **About**, **Skills** and **Projects** page of the site. Enthusiam is a less tangible concept to validate, however I can be picked up from the timeline in the **About** page of the site. The timeline demonstrates how I have constantely been working to improve my skills and learn more throughout my career.
+Creativity is demonstrated by overall aesthetic of the site. Problem solving skills can be seen in the **About**, **Skills** and **Projects** page of the site. Enthusiam is a less tangible concept to validate, however it can be picked up from the timeline in the **About** page of the site. The timeline demonstrates how I have constantely been working to improve my skills and learn more throughout my career.
 
 **O3 - "with this site I want to demonstrate my technical skills through the design of the site"**  
 The site demonstrates a high level of technical skill through its responsive layouts, notable evidence of this can be seen in the landing page navigation menu and the elements of the **Contact** page. 
@@ -330,11 +334,11 @@ The site has a section for a project portfolio that is designed with flexbox tec
 **O5 - "with this site I want to convey my passion for programming"**  
 The site demonstrates a clear passion for programming thorugh the intricate design elements in various sections of the site e.g. the project cards and the **Skills** page progress bars.
 
-**V1 - "to asses the profile/personality/character of the site owner I want to Get a comprehensive overview of the experience and skillset of this developer"**  
+**V1 - "to asses the profile/personality/character of the site owner I want to get a comprehensive overview of the experience and skillset of this developer"**  
 A comprehensive overview of my experience is given in the **About** page timeline. My skillset is thoroughly described in the **Skills** page.
 
-**V2 - "to asses the profile/personality/character of the site owner I want to See an eye catching landing page that captures my attention"**    
-The landing page contains a large hero image which captures the viewers attention. There is a big introductory message. 
+**V2 - "to asses the profile/personality/character of the site owner I want to see an eye catching landing page that captures my attention"**    
+The landing page contains a large hero image which captures the viewers attention. There is a also a big introductory message. 
 
 **V3 - "to assess the technical skills of the site owner I want the project porfolio is to be well presented and accessible"**  
 The **Projects** page is layed out well with project cards containing visually striking images to entice the viewer.
@@ -346,7 +350,7 @@ The project cards visible in the **Projects** page give a detailed overview of e
 The site is designed as a single page site specifically to address this user story.
 
 **V6 - "to assess the technical skills of the site owner I want the layout of the site to be intuitive"**  
-The site is well designed and replicates all of the key elements of a CV.
+The site is designed in a logical manner and replicates all of the key elements of a CV.
 
 **V7 - "to assess the technical skills of the site owner I want the site to perform well on any device"**  
 The site layout responds well to all possible screens in Chrome dev tools. The live site was tested on Chrome and Firefox on an Android phone. It was also tested on Safari on an Iphone. Both testing devices showed responsive layouts.
@@ -358,11 +362,22 @@ In the **Contact** page, there is an available contact form for the viewer to us
 This option is available in the **Contact** page instructions.
 
 **V10 - "In order to offer an interview to the site owner I want to be always easily within a click's reach of getting in contact"**  
-This is satisfied by the fact that the site navbar is fixed to the top of the viewport at all times. The viewer can quickly navigate to the **Contact** page at any stage while viewing the site. The landing page also includes a quicklink to the contact page to allow even faster access tahn using the navbar. 
+This is satisfied by the fact that the site navbar is fixed to the top of the viewport at all times. The viewer can quickly navigate to the **Contact** page at any stage while viewing the site. The landing page also includes a quicklink to the contact page to allow even faster access than using the navbar. 
 
 ***
-## Version Control
-## Deployment
+
+## Version Control & Deployment
+* To begin the project I created a remote repository on Github
+
+* I then created a local repository using Git:
+
+   1. I created a directory on my computer called **ms1-portfolio-steharr**
+   2. I opened the directory using VS code and started a terminal
+   3. I added a README to the file using the command `git add README.md`
+   4. I initialized the directory as a Git repository using the command `git init`
+
+* I linked my local repository to the remote repository:
+
 The website has been deployed using Github pages. In order to do this I followed the steps given in the GitHub docs page on [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site):
 
 1. In the repository, select **Settings**
