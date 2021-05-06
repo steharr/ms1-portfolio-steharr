@@ -371,6 +371,8 @@ textarea {
     border-style:none;
     border-bottom: .1rem solid #96ACB7;
     border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
 }
 /* Change Autocomplete styling in Chrome*/
 /* adapted from CSS tricks: https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ */
