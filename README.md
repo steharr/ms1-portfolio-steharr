@@ -7,7 +7,7 @@ As part of my Code Institute course studies, I have created this personal portfo
 The site owner is myself and the primary goal for creating the site is to get a job in software development. The target site viewers are recruiters; they will be visting this site when they are looking at my job application. Presenting my skills, experience and projects in the form of a website distinguishes me from others in the mind of the recruiter and hopefully helps to relieve the repetition of the hiring process for them.  
 
 The website is mobile first and built using HTML, CSS and Bootstrap. 
-
+***
 ## **UX**
 The **five planes of user experience design** developed by Jesse Jame Garrett was used as the conceptual framework for the development process of this site
 
@@ -99,10 +99,10 @@ For the skeleton plane, I created wireframes of each section of the site using t
 
 #### Wireframes:
 * [Landing Page](assets/documents/wireframes/landing_page.png)
-* [About Page](assets/documents/wireframes/landing_page.png)
-* [Skills Page](assets/documents/wireframes/landing_page.png)
-* [Projects Page](assets/documents/wireframes/landing_page.png)
-* [Contact Page](assets/documents/wireframes/landing_page.png)
+* [About Page](assets/documents/wireframes/about_page.png)
+* [Skills Page](assets/documents/wireframes/skills_page.png)
+* [Projects Page](assets/documents/wireframes/projects_page.png)
+* [Contact Page](assets/documents/wireframes/contact_page.png)
 
 ### **Surface Plane**
 
@@ -128,10 +128,9 @@ The **Gunmetal** color was useful for the less dominant elements of the site suc
 #### Font Pairings
 
 
+***
 ## Features
-
 ### Existing Features
-
 |Feature|Description|Location|
 |:--:|:--:| :--:|
 |Responsive Fixed Navbar| Overhead navigation bar that is fixed top throughout the  site. Contains links to all sections of the site. Collapses to hamburger menu on smaller screens| All pages of the site. Fixed to top of viewport |
@@ -145,35 +144,62 @@ The **Gunmetal** color was useful for the less dominant elements of the site suc
 ### Features Left to Implement
 There were a few features which I had brainstormed early on which could not be achieved either due to time constraints or that they were beyond the scope of my skills. I will look to implement them in a future release: 
 
-* Navigation Menu Buttons User Interface Improvements
-* ScrollReveal Effect Throughout Site 
-* Interactive Skills Page
-* Project Cards Improvements
-* Contact Form Functionality
-* VBA Tutorial Blog
+* Navigation Menu Buttons User Interface Improvements  
+For a future release, I would like to add more animation and visual feedback to the navigation menu buttons on the landing page
+
+* ScrollReveal Effect Throughout Site   
+Since it is a one page site, I want to expand the use of the ScrollReveal effect which I used on the landing page navigation menu. Adding this effect would make scrolling down the site more pleasant for the site viewer
+
+* Interactive Skills Page  
+At the moment the skills page is quite static. I would like to add some more effects to make it more interactive.
+
+* Project Cards Improvements  
+I have multiple ideas to improve the project card appearance in the **Projects** page. These ideas include: Adding links to the projects' live site, repositioning the coding language tags to the bottom of the card, adding a change of image when hovering over the project images.
+
+* Contact Form Functionality  
+At the moment the contact form is not functional as this was out of scope for this project. I will look to update this in future.
+
+* VBA Tips/Tutorial Blog  
+I use Visual Basic for Applications (VBA) alot in my work to automate Excel tasks. I would like at some point to include a section in the site which gives tips and tutorials on how to make good Excel Add-Ins with VBA. I want to pass on some of the knowledge I have learned as I found it to be a very helpful and beneficial language to learn as someone new to programming.
 
 ## Technologies Used
 
-* HTML and CSS
-* Boostrap Framework
-* Font Awesome
-* ScrollReveal API
-* VS Code
-* Live Server VS Code Extension
-* Git
-* GitHubr
-* [Canva](https://www.canva.com/)
-* [Placeholder.com](https://placeholder.com/)
-
+* [Visual Studio Code](https://code.visualstudio.com/)  
+Code editor I used to write my code
+* [Live Server VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)  
+Extension I used to see in real time the effect that the changes I was making to my code would have
+* [HTML](https://en.wikipedia.org/wiki/HTML5)  
+For markup
+* [CSS](https://en.wikipedia.org/wiki/CSS)  
+For styling the site
+* [Boostrap Framework](https://getbootstrap.com/)  
+I used the bootstrap grid system to help me design responsive layouts and I made customized versions of various boostrap components throughout the page
+* [Font Awesome](https://fontawesome.com/)  
+Used for icons throughout the site
+* [ScrollReveal](https://scrollrevealjs.org/)  
+Javascript libray I used to animate elements on the landing page
+* [Git](https://git-scm.com/)  
+For version control
+* [GitHub](https://github.com/)  
+For storing my files and for hosting the site on Github Pages
+* [Canva](https://www.canva.com/)  
+I used a premium version of this tool to create various images throughout the site, most notably the project card images
+* [favicon-generator.org](https://www.favicon-generator.org/)  
+Used to generate a favicon for the site from an image I created using Canva
+* [resizeimage.net](https://resizeimage.net/)  
+Used to resize images on the page to improve Lighthouse scores
+* [placeholder.com](https://placeholder.com/)  
+I used this site to create small blocks of color for the color palette section of this README
+***
 ## Testing
 During development, I regularly tested the output of my code using the VSCode [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to see in real time how changes made in the code affected how the page was being rendered in a Chrome browser. Multiple screen sizes were evaluated during this process using Chrome developer tools. 
 After the bulk of the development was complete, I tested my code by putting it through the [W3C HTML Validator](https://validator.w3.org/), the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and then checked its performace using Lighthouse in Chrome Dev Tools. The final period of testing was done by validating the site against each of my User stories.
 
-### Bugs Occuring During Development & Lessons Learned
-During the development phase of the site, I encountered a number of signifcant bugs while testing the output of my code. These are documented below:
+### **Notable Bugs Occuring During Development**
+During the development phase of the site, I encountered a number of signifcant bugs while testing the output of my code. They were all mistakes which led to important lessons learned for future projects. These are documented below:
 #### **Misplaced Nav Bar**
 
-<img src="assets\documents\testing\error_misplaced_navbar.png" alt="drawing" width="250"/> 
+<img src="assets\documents\testing\error_misplaced_navbar.png" alt="misplaced navbar error" width="250"/> 
 
 * **Description**  
 Early on, an issue ocurred where the nav bar of the site was not appearing fixed to the top of the screen for both desktop and mobile devices even though the bootstrap 'fixed-top' class had been used.  
@@ -182,7 +208,7 @@ To troubleshoot this issue I removed individual HTML elements one at a time from
 
 #### **HTML Body Width Error**
 
-<img src="assets\documents\testing\error_html_body_width.png" alt="drawing" width="300"/> 
+<img src="assets\documents\testing\error_html_body_width.png" alt="html body width error" width="300"/> 
 
 * **Description**  
 Late on in development, I noticed that the footer of the site was not spanning the width of the viewport on Ipad screens only. This was especially confusing since the element had the **container-fluid** class. Looking into Chrome developer tools, I could see that the width of the html element in the page was not covering the entire width of the Ipad screen.
@@ -190,6 +216,15 @@ Late on in development, I noticed that the footer of the site was not spanning t
 To troubleshoot this issue, I did some research online and came across [this post on stack overflow with a similar issue.](https://stackoverflow.com/questions/30358630/html-body-not-filling-complete-width-on-mobile-devices) I then determined that the issue was being caused by text overflow somewhere on the page. This theory was backed up by the fact that the issue was only occuring on the Ipad, which was showing text overflow on the **About** and **Projects** pages of the site. To fix this issue I refactored the code for both of these pages.
 
 #### **Live Site Contact Form Rounded Input Boxes**
+
+<img src="assets\documents\testing\error_rounded_edges.png" alt="rounded edges error" width="200"/>
+
+* **Description**  
+After deploying the site to Github pages, I noticed when viewing the live site on my Iphone that the contact form fields had rounded corners which I had not intended. The aesthetic of the form was designed to be all straight edges. For some reason this was not visible when I was testing the site through Chrome developer tools on my desktop, even when selecting the Iphone frame.
+
+* **Root Cause and Fix**   
+To address this I initially set the `border-radius` to equal zero in my css rule for these elements. This did not fix the issue so I did some reasearch and found that the mobile version of safari can often make HTML input elements looks different to what appears on desktop. I found [this article on medium.com](https://medium.com/@martinbottanek/how-to-disable-rounded-corners-on-input-fields-using-safari-iphone-ipad-2d08a199c39c) which gave me the vendor prefixes and css code to override this and get my desired effect.
+
 
 ### HTML Validator Results
 After passing my code through the HTML validator for the first time, I recieved 7 error messages and a one repeated warning. These errors and warnings were all corrected and the validator check was done again. The check check produced no errors or warnings. Below is how each of the initial validator check results were addressed:
@@ -206,7 +241,7 @@ After passing my code through the HTML validator for the first time, I recieved 
 
    For the list of software expertise items on the skills page, I had accidentally put paragraph elements as children of the unordered list. The list already had **li** elements containing the headings for these paragraphs, therefore I could easily move the paragraph elements into them to amend this error.
 
-* Stray i Tag
+* Stray end `<i>` Tag
 
    <img src="assets\documents\testing\html_validator_stray_i.png" alt="stray i tag error" width="500"/>
 
@@ -233,7 +268,7 @@ After passing my code through the HTML validator for the first time, I recieved 
    As the site code was contained all in one html file, in order to easily distinguish by eye each section of the page while coding I added wide comments around each section. This had brought about multiple warnings from the HTML validator. To remove this warning, I adjusted the comments to be the normal size.
 
 ### CSS Validator
-After passing my code through the CSS validator for the first time, there were 2 errors and numerous warnings appearing on the site. Upon further inspection I saw that many of these results were linked to external files I had referenced in my code e.g. via Bootstrap CDN links. Since these results were not linked to my code I re-ran the check exclusively for my stylesheet using the link "https://steharr.github.io/ms1-portfolio-steharr/assets/css/style.css". The validator produced 23 warnings for my code. Below is how each of the initial validator check results were investigated:
+After passing my code through the CSS validator for the first time, there were 2 errors and numerous warnings appearing on the site. The errors given were related to external files I had referenced in my code e.g. via Bootstrap CDN links. Since these results were not linked to my code I focused solely and the messages related to my code. The overall results from the validator produced 23 warnings for my code. Below is how each of the initial validator check results were investigated:
 
 #### Warnings
 
@@ -275,27 +310,58 @@ The final results for desktop were as below:
 
    <img src="assets\documents\testing\lighthouse_results_final_desktop.png" alt="final lighthouse results for mobile" width="500"/>
 
+_\*Since running the final lightouse test for mobile shown here, the performance score has dipped slightly in subsequent tests. I unfortunately ran out of time to investigate this further_
 
 ### User Stories Validation
+_**Note:** For this validation, to make it easy to distinguish between the user stories for each perspective that I outlined in my **Strategy** section, I will abbreviate the Site Owner user stories with the letter **O** (for owner) and for the site viewer User Stories with the letter **V** (for viewer)_ 
 
-<!-- In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+**O1 - "with this site I want to get offers for jobs in software development"**  
+Of all of the user stories this is the only one which cannot be fully validated yet as I have not yet used this site for job applications. I am confident however that it will be very satisfy this in the future.
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+**O2 - "with this site I want display my strongest traits to the site visitor: Creativity, Problem Solver, Enthusiastic Learner"**   
+Creativity is demonstrated by overall aesthetic of the site. Problem solving skills can be seen in the **About**, **Skills** and **Projects** page of the site. Enthusiam is a less tangible concept to validate, however I can be picked up from the timeline in the **About** page of the site. The timeline demonstrates how I have constantely been working to improve my skills and learn more throughout my career.
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+**O3 - "with this site I want to demonstrate my technical skills through the design of the site"**  
+The site demonstrates a high level of technical skill through its responsive layouts, notable evidence of this can be seen in the landing page navigation menu and the elements of the **Contact** page. 
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+**O4 - "with this site I want to have a location to store & demonstrate all of my completed and ongoing projects"**  
+The site has a section for a project portfolio that is designed with flexbox technology. The layout of the portfolio therefore wont be damaged if it gets updated with additional project cards. There is also project banners for work in progress projects. The project cards contain sufficient amount of elements to fully demonstrate all aspects of a project. 
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+**O5 - "with this site I want to convey my passion for programming"**  
+The site demonstrates a clear passion for programming thorugh the intricate design elements in various sections of the site e.g. the project cards and the **Skills** page progress bars.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+**V1 - "to asses the profile/personality/character of the site owner I want to Get a comprehensive overview of the experience and skillset of this developer"**  
+A comprehensive overview of my experience is given in the **About** page timeline. My skillset is thoroughly described in the **Skills** page.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here. -->
+**V2 - "to asses the profile/personality/character of the site owner I want to See an eye catching landing page that captures my attention"**    
+The landing page contains a large hero image which captures the viewers attention. There is a big introductory message. 
 
+**V3 - "to assess the technical skills of the site owner I want the project porfolio is to be well presented and accessible"**  
+The **Projects** page is layed out well with project cards containing visually striking images to entice the viewer.
+
+**V4 - "to assess the technical skills of the site owner I want the project porfolio is to be easily understandable"**  
+The project cards visible in the **Projects** page give a detailed overview of each project. A short project description with details on the coding languages used are included. Links to the project GitHub repos are given.
+
+**V5 - "to assess the technical skills of the site owner I want the experience of navigating through the site is to be enjoyable and smooth"**  
+The site is designed as a single page site specifically to address this user story.
+
+**V6 - "to assess the technical skills of the site owner I want the layout of the site to be intuitive"**  
+The site is well designed and replicates all of the key elements of a CV.
+
+**V7 - "to assess the technical skills of the site owner I want the site to perform well on any device"**  
+The site layout responds well to all possible screens in Chrome dev tools. The live site was tested on Chrome and Firefox on an Android phone. It was also tested on Safari on an Iphone. Both testing devices showed responsive layouts.
+
+**V8 - "In order to offer an interview to the site owner I want easy access to contact details of this person"**  
+In the **Contact** page, there is an available contact form for the viewer to use. In addition to this, the site owner email address is given if the viewer would prefer to send an email. Finally, right below the **Contact** page is the footer which contains a "social" section containing links to the site owners social media pages.
+
+**V9 - "In order to offer an interview to the site owner I want have the option to download a traditional CV"**  
+This option is available in the **Contact** page instructions.
+
+**V10 - "In order to offer an interview to the site owner I want to be always easily within a click's reach of getting in contact"**  
+This is satisfied by the fact that the site navbar is fixed to the top of the viewport at all times. The viewer can quickly navigate to the **Contact** page at any stage while viewing the site. The landing page also includes a quicklink to the contact page to allow even faster access tahn using the navbar. 
+
+***
+## Version Control
 ## Deployment
 The website has been deployed using Github pages. In order to do this I followed the steps given in the GitHub docs page on [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site):
 
@@ -303,6 +369,7 @@ The website has been deployed using Github pages. In order to do this I followed
 2. Select the **Pages** tab
 3. Select **main** as the publishing source, using the Branch drop down menu
 
+***
 ## Credits
 
 ### Content
