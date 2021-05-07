@@ -391,14 +391,38 @@ This is satisfied by the fact that the site navbar is fixed to the top of the vi
 ***
 ## Credits
 
-### Content
-<!-- - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z) -->
+### Code
 
-<!--  -->
+* Bootstrap
+
+   * The **Header Nav Bar** was customized from the [Bootstrap Navbar Component](https://getbootstrap.com/docs/4.6/components/navbar/)
+   * The **Skills** page progress bars were customized from the [Bootstrap Progress Component](https://getbootstrap.com/docs/4.6/components/progress/)
+   * The **Projects** page project cards were customized from the [Bootstrap Card Component](https://getbootstrap.com/docs/4.6/components/card/)
+ 
+* Coolors
+
+   * The gradient colour effect for the **Skills** page progress bars was made using the [Coolors Gradient Maker](https://coolors.co/gradient-maker/e76f51-e9c46a?position=0,100&opacity=100,100&type=linear&rotation=0)
+
+* ScrollReveal
+
+   * The ScrollReveal effect was implemented using the [docs available at the official site](https://scrollrevealjs.org/guide/customization.html)
+
+### Content
+All written content was created by me
 
 ### Media
-<!-- - The photos used in this site were obtained from ... -->
+
+* Images
+   * about-study.png - [Unsplash - Credit: Aaron Burden](https://unsplash.com/photos/QJDzYT_K8Xg)
+   * about-work.png -  [Unsplash - Credit: Jason Jarrach](https://unsplash.com/photos/8grom09QaDs)
+   * about-now.png - [Unsplash - Credit: Florian Olivo](https://unsplash.com/photos/4hbJ-eymZ1o)
+   * project_card_whiskey_drop.png - logo designed using [Canva](https://www.canva.com/) with background image downloaded from [Unsplash - Credit: Dylan de Jonge](https://unsplash.com/photos/pe9T4ROjpzQ)
+   * project_card_loverunning.png - logo designed using [Canva](https://www.canva.com/) with background image downloaded from [Code Institute](http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png)
+   * project_card_python_project.png - logo designed using [Canva](https://www.canva.com/)
+   * project_card_steharrportfolio.png - logo designed using [Canva](https://www.canva.com/)
+   * project_card_excel_project.png - logo designed using [Canva](https://www.canva.com/)
 
 ### Acknowledgements
 
-<!-- - I received inspiration for this project from X -->
+* My mentor, **Spencer Barriball** who guided me through this project.
+* Fellow **Code Institute** students on Slack who helped troubleshoot issues and give me inspiration for this project
