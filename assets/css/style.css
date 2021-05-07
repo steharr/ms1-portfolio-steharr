@@ -199,7 +199,7 @@ hr {
     background: linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
     background: -moz-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
     background: -webkit-linear-gradient(0deg, hsla(12, 76%, 61%, 1) 0%, hsla(43, 74%, 66%, 1) 100%);
-    /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E76F51", endColorstr="#E9C46A", GradientType=1 ); */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#E76F51", endColorstr="#E9C46A", GradientType=1 );
 }
 ul {
     padding:0 0 0 1rem;
