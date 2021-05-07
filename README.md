@@ -284,7 +284,7 @@ After passing my code through the CSS validator for the first time, there were 2
 
 * Same colour for **background-color** and **border-top-color**
 
-   <img src="assets\documents\testing\css_validator_colour.png" alt="colour warning" width="500"/>
+   <img src="assets\documents\testing\css_validator_color.png" alt="colour warning" width="500"/>
 
    The background colour of the timeline images on the **About** had been mistakenly set to the same colour as their borders. This was amended so that the background colour was the same as the background colour of the buttons on the **Landing Page**
 
