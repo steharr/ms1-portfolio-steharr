@@ -62,10 +62,10 @@ For the Scope plane, I made some initial key design choices about how I wanted t
 
 The site is designed to be a one page scrolling site. This is to make the site navigation as smooth as possible for the recruiter. The objective is that the site flows in one direction (ie. from top to bottom) with the final destination being a contact page. This replicates how a recruiter normally reads through a CV (i.e. top to bottom) which will give them a feeling of familiarity. 
 
-In order to minimize the amount of manual navigation the site has been designed with the objective that the viewer should not need to press any button in order to view any data. Navigation is primarily done by scrolling. The only time the user should need to press any element on the website is for either of the following situations:
+Navigation is on the site is intended to be primarily done by scrolling. The only time the user should need to press any element on the website is for either of the following situations:
 * They want to go back and re-evaluate a previously seen page (possible through the main overhead nav bar)
 * They want to skip content to go to a page of particular interest (e.g. on the 'about' page there is an option to jump to projects).
-
+* They want go to an external location e.g. a Github project repository
 
 ### **Structure Plane**
 For the structure of the site I decided to include the key elements of a resume/cv: a personal pitch/summary, education, work history, skills, projects. I also included a contact form section in order to fulfil site viewer user stories 8 and 9. When deciding the individual layout of each page, I researched typical website layouts online for inspiration. A notable example which helped was [this article from adobe.com](https://xd.adobe.com/ideas/principles/web-design/11-website-layouts-that-made-content-shine-in-2019/)
@@ -194,6 +194,8 @@ Used to generate a favicon for the site from an image I created using Canva
 Used to resize images on the page to improve Lighthouse scores
 * [placeholder.com](https://placeholder.com/)  
 I used this site to create small blocks of colour for the colour palette section of this README
+* [Balsamiq](https://balsamiq.com/  
+Used to create wireframes
 ***
 ## Testing
 During development, I regularly tested the output of my code using the VSCode [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to see in real time how changes made in the code affected how the page was being rendered in a Chrome browser. Multiple screen sizes were evaluated during this process using Chrome developer tools.
@@ -340,11 +342,18 @@ A comprehensive overview of my experience is given in the **About** page timelin
 **V2 - "to asses the profile/personality/character of the site owner I want to see an eye-catching landing page that captures my attention"**    
 The landing page contains a large hero image which captures the viewers' attention. There is a also a big introductory message. 
 
+
+<img src="assets\documents\testing\user_stories_validation_hero_image.png" alt="user stories validation landing page hero image" width="500"/>
+
+
 **V3 - "to assess the technical skills of the site owner I want the project porfolio is to be well presented and accessible"**  
 The **Projects** page is laid out well with project cards containing visually striking images to entice the viewer.
 
 **V4 - "to assess the technical skills of the site owner I want the project portfolio is to be easily understandable"**  
 The project cards visible in the **Projects** page give a detailed overview of each project. A short project description with details on the coding languages used are included. Links to the project GitHub repos are given.
+
+<img src="assets\documents\testing\user_stories_validation_project_card.png" alt="user stories validation project card" width="250"/>
+
 
 **V5 - "to assess the technical skills of the site owner I want the experience of navigating through the site is to be enjoyable and smooth"**  
 The site is designed as a single page site specifically to address this user story.
@@ -357,6 +366,9 @@ The site layout responds well to all possible screens in Chrome dev tools. The l
 
 **V8 - "In order to offer an interview to the site owner I want easy access to contact details of this person"**  
 In the **Contact** page, there is an available contact form for the viewer to use. In addition to this, the site owner email address is given if the viewer would prefer to send an email. Finally, right below the **Contact** page is the footer which contains a "social" section containing links to the site owner's social media pages.
+
+<img src="assets\documents\testing\user_stories_validation_contact_page.png" alt="user stories validation project card" width="500"/>
+
 
 **V9 - "In order to offer an interview to the site owner I want have the option to download a traditional CV"**  
 This option is available in the **Contact** page instructions.
